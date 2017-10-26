@@ -1,0 +1,393 @@
+denovo_map.pl version 1.47 started at 2017-10-25 22:50:05
+/usr/local/bin/denovo_map.pl -b 1 -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -O /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/pop_map/pop_map -T 4 -m 6 -t -B PM_demo_SE6_radtags -D 24/10/17 -X populations:--genepop --vcf --vcf_haplotypes --structure -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/A03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/B03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/C03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/D03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E02.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F02.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G02.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H02.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H03.1.fq
+Initializing the database...
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO batches SET id=1, description='24/10/17', date='2017-10-25', type='population'"
+Loading sample data into the MySQL database...
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=1, batch_id=1, type='sample', file='A03.1', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=2, batch_id=1, type='sample', file='B03.1', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=3, batch_id=1, type='sample', file='C03.1', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=4, batch_id=1, type='sample', file='D03.1', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=5, batch_id=1, type='sample', file='E02.1', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=6, batch_id=1, type='sample', file='E03.1', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=7, batch_id=1, type='sample', file='F02.1', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=8, batch_id=1, type='sample', file='F03.1', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=9, batch_id=1, type='sample', file='G02.1', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=10, batch_id=1, type='sample', file='G03.1', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=11, batch_id=1, type='sample', file='H02.1', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE6_radtags -e "INSERT INTO samples SET sample_id=12, batch_id=1, type='sample', file='H03.1', pop_id='3', group_id='1'"
+
+
+ustacks
+==========
+
+Sample 1 of 12 'A03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/A03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 1 -m 6 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 1
+  Min depth of coverage to create a stack: 6
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/A03.1.fq
+Loading RAD-Tags...done
+Loaded 54808 RAD-Tags.
+  Inserted 32417 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+1460 initial stacks were populated; 30957 stacks were set aside as secondary reads.
+Initial coverage mean: 8.18493; Std Dev: 4.81849; Max: 69
+Repetitive stacks removal threshold: 18 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+Removing repetitive stacks.
+  Removed 49 stacks.
+  1448 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 7.51595; Std Dev: 1.80172; Max: 18
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (98 k-mers per read); 4 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  1448 stacks merged into 1441 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 7.55342; Std Dev: 1.93502; Max: 27
+Merging remainder radtags
+  42858 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (118 k-mers per read); 10 k-mer hits required.
+  Matched 2423 remainder reads; unable to match 40435 remainder reads.
+After remainders merged, coverage depth Mean: 9.2792; Std Dev: 3.5848; Max: 82
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 14373
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/A03.1.fq... read 54808 sequence IDs.
+done.
+ustacks is done.
+
+Sample 2 of 12 'B03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/B03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 2 -m 6 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 2
+  Min depth of coverage to create a stack: 6
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/B03.1.fq
+Loading RAD-Tags...done
+Loaded 65925 RAD-Tags.
+  Inserted 40560 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+1867 initial stacks were populated; 38693 stacks were set aside as secondary reads.
+Initial coverage mean: 8.391; Std Dev: 4.713; Max: 78
+Repetitive stacks removal threshold: 18 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (73 k-mers per read); 2 k-mer hits required.
+Removing repetitive stacks.
+  Removed 48 stacks.
+  1860 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 7.81418; Std Dev: 2.1075; Max: 18
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (97 k-mers per read); 3 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  1860 stacks merged into 1846 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 7.87479; Std Dev: 2.30761; Max: 31
+Merging remainder radtags
+  50259 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (117 k-mers per read); 9 k-mer hits required.
+  Matched 3814 remainder reads; unable to match 46445 remainder reads.
+After remainders merged, coverage depth Mean: 9.98781; Std Dev: 3.51205; Max: 49
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 19480
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/B03.1.fq... read 65925 sequence IDs.
+done.
+ustacks is done.
+
+Sample 3 of 12 'C03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/C03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 3 -m 6 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 3
+  Min depth of coverage to create a stack: 6
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/C03.1.fq
+Loading RAD-Tags...done
+Loaded 50465 RAD-Tags.
+  Inserted 29522 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+1435 initial stacks were populated; 28087 stacks were set aside as secondary reads.
+Initial coverage mean: 8.08223; Std Dev: 4.55247; Max: 58
+Repetitive stacks removal threshold: 18 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 69 (73 k-mers per read); 4 k-mer hits required.
+Removing repetitive stacks.
+  Removed 41 stacks.
+  1429 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 7.46485; Std Dev: 1.80203; Max: 18
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (95 k-mers per read); 1 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  1429 stacks merged into 1425 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 7.48633; Std Dev: 1.86433; Max: 25
+Merging remainder radtags
+  38867 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (115 k-mers per read); 7 k-mer hits required.
+  Matched 2322 remainder reads; unable to match 36545 remainder reads.
+After remainders merged, coverage depth Mean: 9.15683; Std Dev: 3.20002; Max: 44
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 13920
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/C03.1.fq... read 50465 sequence IDs.
+done.
+ustacks is done.
+
+Sample 4 of 12 'D03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/D03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 4 -m 6 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 4
+  Min depth of coverage to create a stack: 6
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/D03.1.fq
+Loading RAD-Tags...done
+Loaded 84076 RAD-Tags.
+  Inserted 49111 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+2953 initial stacks were populated; 46158 stacks were set aside as secondary reads.
+Initial coverage mean: 9.16289; Std Dev: 6.36875; Max: 102
+Repetitive stacks removal threshold: 22 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 73 (74 k-mers per read); 1 k-mer hits required.
+Removing repetitive stacks.
+  Removed 73 stacks.
+  2930 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 8.4559; Std Dev: 2.49961; Max: 22
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (100 k-mers per read); 6 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  2930 stacks merged into 2918 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 8.49128; Std Dev: 2.5632; Max: 28
+Merging remainder radtags
+  57018 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 29 (118 k-mers per read); 2 k-mer hits required.
+  Matched 6800 remainder reads; unable to match 50218 remainder reads.
+After remainders merged, coverage depth Mean: 10.8623; Std Dev: 3.62775; Max: 58
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 33858
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/D03.1.fq... read 84076 sequence IDs.
+done.
+ustacks is done.
+
+Sample 5 of 12 'E02.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E02.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 5 -m 6 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 5
+  Min depth of coverage to create a stack: 6
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E02.1.fq
+Loading RAD-Tags...done
+Loaded 82762 RAD-Tags.
+  Inserted 46472 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+3141 initial stacks were populated; 43331 stacks were set aside as secondary reads.
+Initial coverage mean: 8.95384; Std Dev: 4.93041; Max: 91
+Repetitive stacks removal threshold: 19 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+Removing repetitive stacks.
+  Removed 62 stacks.
+  3129 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 8.46801; Std Dev: 2.42929; Max: 19
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (98 k-mers per read); 4 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  3129 stacks merged into 3098 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 8.55413; Std Dev: 2.5697; Max: 29
+Merging remainder radtags
+  54638 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (118 k-mers per read); 10 k-mer hits required.
+  Matched 7373 remainder reads; unable to match 47265 remainder reads.
+After remainders merged, coverage depth Mean: 10.9731; Std Dev: 3.69249; Max: 64
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 35497
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E02.1.fq... read 82762 sequence IDs.
+done.
+ustacks is done.
+
+Sample 6 of 12 'E03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 6 -m 6 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 6
+  Min depth of coverage to create a stack: 6
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E03.1.fq
+Loading RAD-Tags...done
+Loaded 56831 RAD-Tags.
+  Inserted 38499 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+1040 initial stacks were populated; 37459 stacks were set aside as secondary reads.
+Initial coverage mean: 7.94615; Std Dev: 4.45695; Max: 56
+Repetitive stacks removal threshold: 17 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (75 k-mers per read); 4 k-mer hits required.
+Removing repetitive stacks.
+  Removed 37 stacks.
+  1035 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 7.28614; Std Dev: 1.76622; Max: 17
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (99 k-mers per read); 5 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  1035 stacks merged into 1032 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 7.308; Std Dev: 1.90188; Max: 24
+Merging remainder radtags
+  48567 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 29 (117 k-mers per read); 1 k-mer hits required.
+  Matched 1556 remainder reads; unable to match 47011 remainder reads.
+After remainders merged, coverage depth Mean: 8.864; Std Dev: 3.43009; Max: 50
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 9820
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E03.1.fq... read 56831 sequence IDs.
+done.
+ustacks is done.
+
+Sample 7 of 12 'F02.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F02.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 7 -m 6 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 7
+  Min depth of coverage to create a stack: 6
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F02.1.fq
+Loading RAD-Tags...done
+Loaded 52296 RAD-Tags.
+  Inserted 35877 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+887 initial stacks were populated; 34990 stacks were set aside as secondary reads.
+Initial coverage mean: 7.62345; Std Dev: 3.12394; Max: 35
+Repetitive stacks removal threshold: 14 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (72 k-mers per read); 1 k-mer hits required.
+Removing repetitive stacks.
+  Removed 32 stacks.
+  883 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 7.15789; Std Dev: 1.4843; Max: 14
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (96 k-mers per read); 2 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  883 stacks merged into 878 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 7.2; Std Dev: 1.67121; Max: 20
+Merging remainder radtags
+  45534 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (116 k-mers per read); 8 k-mer hits required.
+  Matched 1239 remainder reads; unable to match 44295 remainder reads.
+After remainders merged, coverage depth Mean: 8.65765; Std Dev: 3.04078; Max: 40
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 8001
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F02.1.fq... read 52296 sequence IDs.
+done.
+ustacks is done.
+
+Sample 8 of 12 'F03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 8 -m 6 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 8
+  Min depth of coverage to create a stack: 6
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F03.1.fq
+Loading RAD-Tags...done
+Loaded 40945 RAD-Tags.
+  Inserted 25123 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+847 initial stacks were populated; 24276 stacks were set aside as secondary reads.
+Initial coverage mean: 8.59504; Std Dev: 7.02803; Max: 85
+Repetitive stacks removal threshold: 23 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (72 k-mers per read); 1 k-mer hits required.
+Removing repetitive stacks.
+  Removed 34 stacks.
+  841 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 7.46125; Std Dev: 2.38281; Max: 23
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (96 k-mers per read); 2 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  841 stacks merged into 836 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 7.50743; Std Dev: 2.618; Max: 31
+Merging remainder radtags
+  33665 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (116 k-mers per read); 8 k-mer hits required.
+  Matched 1402 remainder reads; unable to match 32263 remainder reads.
+After remainders merged, coverage depth Mean: 9.24257; Std Dev: 4.84058; Max: 73
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 8682
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F03.1.fq... read 40945 sequence IDs.
+done.
+ustacks is done.
+
+Sample 9 of 12 'G02.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G02.1.fq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/denovo -i 9 -m 6 -p 4 -d  2>&1

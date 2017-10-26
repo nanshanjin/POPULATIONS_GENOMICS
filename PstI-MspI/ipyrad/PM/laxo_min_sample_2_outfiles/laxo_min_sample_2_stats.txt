@@ -1,0 +1,91 @@
+
+
+## The number of loci caught by each filter.
+## ipyrad API location: [assembly].stats_dfs.s7_filters
+
+                            total_filters  applied_order  retained_loci
+total_prefiltered_loci               7325              0           7325
+filtered_by_rm_duplicates              42             42           7283
+filtered_by_max_indels                 59             59           7224
+filtered_by_max_snps                    9              1           7223
+filtered_by_max_shared_het            359            342           6881
+filtered_by_min_sample                  0              0           6881
+filtered_by_max_alleles               140             23           6858
+total_filtered_loci                  6858              0           6858
+
+
+## The number of loci recovered for each Sample.
+## ipyrad API location: [assembly].stats_dfs.s7_samples
+
+     sample_coverage
+A03             3932
+B03             4365
+C03             3640
+D03             5163
+E02             5354
+E03             3079
+F02             2682
+F03             2697
+G02             2735
+G03             3189
+H02             2347
+H03             5473
+
+
+## The number of loci for which N taxa have data.
+## ipyrad API location: [assembly].stats_dfs.s7_loci
+
+    locus_coverage  sum_coverage
+1                0             0
+2              730           730
+3              592          1322
+4              611          1933
+5              646          2579
+6              716          3295
+7              822          4117
+8              817          4934
+9              763          5697
+10             633          6330
+11             373          6703
+12             155          6858
+
+
+## The distribution of SNPs (var and pis) per locus.
+## var = Number of loci with n variable sites (pis + autapomorphies)
+## pis = Number of loci with n parsimony informative site (minor allele in >1 sample)
+## ipyrad API location: [assembly].stats_dfs.s7_snps
+
+     var  sum_var   pis  sum_pis
+0   4930        0  5699        0
+1   1336     1336   871      871
+2    373     2082   195     1261
+3    124     2454    58     1435
+4     39     2610    18     1507
+5     20     2710     8     1547
+6      9     2764     2     1559
+7      6     2806     2     1573
+8      5     2846     1     1581
+9      4     2882     1     1590
+10     1     2892     0     1590
+11     4     2936     2     1612
+12     1     2948     0     1612
+13     2     2974     0     1612
+14     1     2988     1     1626
+15     3     3033     0     1626
+
+
+## Final Sample stats summary
+
+     state  reads_raw  reads_passed_filter  clusters_total  clusters_hidepth  hetero_est  error_est  reads_consens  loci_in_assembly
+A03      7      70715                70486           20654              4412    0.005646   0.000960           4382              3932
+B03      7      85914                85590           29396              4844    0.005185   0.001038           4808              4365
+C03      7      64481                64295           20012              4008    0.004738   0.000915           3988              3640
+D03      7     109634               109278           37526              5728    0.004037   0.000931           5686              5163
+E02      7     112366               111961           34967              6069    0.004747   0.000978           6015              5354
+E03      7      74948                74690           31783              3537    0.005394   0.000964           3504              3079
+F02      7      67768                67543           28158              3059    0.006553   0.001089           3038              2682
+F03      7      54237                54052           17607              3040    0.006381   0.000956           3023              2697
+G02      7      58490                58310           21159              3086    0.006217   0.000962           3066              2735
+G03      7      72596                72317           29722              3533    0.005261   0.000975           3516              3189
+H02      7      51772                51559           16964              2700    0.007006   0.000968           2686              2347
+H03      7      98976                98673           25128              6050    0.003939   0.000896           6018              5473

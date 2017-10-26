@@ -1,0 +1,80 @@
+
+
+## The number of loci caught by each filter.
+## ipyrad API location: [assembly].stats_dfs.s7_filters
+
+                            total_filters  applied_order  retained_loci
+total_prefiltered_loci                173              0            173
+filtered_by_rm_duplicates              41             41            132
+filtered_by_max_indels                  3              3            129
+filtered_by_max_snps                    9              0            129
+filtered_by_max_shared_het             19              7            122
+filtered_by_min_sample                151            115              7
+filtered_by_max_alleles                53              1              6
+total_filtered_loci                     6              0              6
+
+
+## The number of loci recovered for each Sample.
+## ipyrad API location: [assembly].stats_dfs.s7_samples
+
+     sample_coverage
+A03                6
+B03                6
+C03                6
+D03                6
+E02                6
+E03                6
+F02                6
+F03                6
+G02                6
+G03                6
+H02                6
+H03                6
+
+
+## The number of loci for which N taxa have data.
+## ipyrad API location: [assembly].stats_dfs.s7_loci
+
+    locus_coverage  sum_coverage
+1                0             0
+2                0             0
+3                0             0
+4                0             0
+5                0             0
+6                0             0
+7                0             0
+8                0             0
+9                0             0
+10               0             0
+11               0             0
+12               6             6
+
+
+## The distribution of SNPs (var and pis) per locus.
+## var = Number of loci with n variable sites (pis + autapomorphies)
+## pis = Number of loci with n parsimony informative site (minor allele in >1 sample)
+## ipyrad API location: [assembly].stats_dfs.s7_snps
+
+   var  sum_var  pis  sum_pis
+0    4        0    4        0
+1    1        1    1        1
+2    0        1    0        1
+3    0        1    0        1
+4    1        5    1        5
+
+
+## Final Sample stats summary
+
+     state  reads_raw  reads_passed_filter  clusters_total  clusters_hidepth  hetero_est  error_est  reads_consens  loci_in_assembly
+A03      7     113637               113052           56187               254    0.066415   0.019552            158                 6
+B03      7      95396                94978           50575               178    0.060237   0.020382            120                 6
+C03      7     108833               108100           56387               247    0.056618   0.013890            165                 6
+D03      7      67229                66728           40187               117    0.061547   0.020181             80                 6
+E02      7      92062                91522           49944               147    0.063988   0.021275            100                 6
+E03      7      77299                76631           46207               140    0.061029   0.020818             89                 6
+F02      7      75499                75070           43783               131    0.063307   0.021858             81                 6
+F03      7      98150                97572           50828               188    0.058561   0.018318            130                 6
+G02      7      88544                88071           48184               158    0.059682   0.020466            104                 6
+G03      7      69837                69398           40800               119    0.061344   0.019711             84                 6
+H02      7      79163                78611           44960               140    0.063891   0.021083             90                 6
+H03      7     113242               112695           55251               218    0.063988   0.021275            144                 6

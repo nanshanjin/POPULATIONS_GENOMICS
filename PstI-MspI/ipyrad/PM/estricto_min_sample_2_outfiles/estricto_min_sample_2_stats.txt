@@ -1,0 +1,85 @@
+
+
+## The number of loci caught by each filter.
+## ipyrad API location: [assembly].stats_dfs.s7_filters
+
+                            total_filters  applied_order  retained_loci
+total_prefiltered_loci                258              0            258
+filtered_by_rm_duplicates               0              0            258
+filtered_by_max_indels                 18             18            240
+filtered_by_max_snps                    0              0            240
+filtered_by_max_shared_het            118            111            129
+filtered_by_min_sample                  0              0            129
+filtered_by_max_alleles                46              3            126
+total_filtered_loci                   126              0            126
+
+
+## The number of loci recovered for each Sample.
+## ipyrad API location: [assembly].stats_dfs.s7_samples
+
+     sample_coverage
+A03               59
+B03               70
+C03               52
+D03               91
+E02               89
+E03               47
+F02               41
+F03               50
+G02               45
+G03               55
+H02               44
+H03               90
+
+
+## The number of loci for which N taxa have data.
+## ipyrad API location: [assembly].stats_dfs.s7_loci
+
+    locus_coverage  sum_coverage
+1                0             0
+2               45            45
+3               10            55
+4               11            66
+5                6            72
+6                7            79
+7                2            81
+8                7            88
+9                3            91
+10               6            97
+11               8           105
+12              21           126
+
+
+## The distribution of SNPs (var and pis) per locus.
+## var = Number of loci with n variable sites (pis + autapomorphies)
+## pis = Number of loci with n parsimony informative site (minor allele in >1 sample)
+## ipyrad API location: [assembly].stats_dfs.s7_snps
+
+   var  sum_var  pis  sum_pis
+0  101        0  119        0
+1   14       14    6        6
+2    6       26    0        6
+3    3       35    0        6
+4    0       35    1       10
+5    0       35    0       10
+6    1       41    0       10
+7    0       41    0       10
+8    0       41    0       10
+9    1       50    0       10
+
+
+## Final Sample stats summary
+
+     state  reads_raw  reads_passed_filter  clusters_total  clusters_hidepth  hetero_est  error_est  reads_consens  loci_in_assembly
+A03      7      70715                70486           21261               111    0.013640   0.001188            111                59
+B03      7      85914                85590           30171               157    0.014524   0.001186            156                70
+C03      7      64481                64295           20507                94    0.011093   0.000834             94                52
+D03      7     109634               109278           38498               267    0.013368   0.000966            267                91
+E02      7     112366               111961           36063               318    0.016257   0.001058            318                89
+E03      7      74948                74690           32407                86    0.010204   0.000734             85                47
+F02      7      67768                67543           28789                72    0.009476   0.001305             71                41
+F03      7      54237                54052           18113                80    0.010033   0.000975             80                50
+G02      7      58490                58310           21699                73    0.007924   0.001226             73                45
+G03      7      72596                72317           30495                94    0.011761   0.001094             94                55
+H02      7      51772                51559           17382                67    0.006902   0.001035             67                44
+H03      7      98976                98673           25859               283    0.017000   0.000899            283                90

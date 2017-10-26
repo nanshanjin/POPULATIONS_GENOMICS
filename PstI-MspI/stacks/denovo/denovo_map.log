@@ -1,0 +1,1059 @@
+denovo_map.pl version 1.47 started at 2017-10-25 22:55:56
+/usr/local/bin/denovo_map.pl -b 1 -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -O /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/pop_map/pop_map -T 4 -m 20 -t -B PM_demo_SE20_radtags -D 24/10/17 -X populations:--genepop --vcf --vcf_haplotypes --structure -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/A03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/B03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/C03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/D03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E02.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F02.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G02.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G03.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H02.1.fq -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H03.1.fq
+Initializing the database...
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO batches SET id=1, description='24/10/17', date='2017-10-25', type='population'"
+Loading sample data into the MySQL database...
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=1, batch_id=1, type='sample', file='A03.1', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=2, batch_id=1, type='sample', file='B03.1', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=3, batch_id=1, type='sample', file='C03.1', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=4, batch_id=1, type='sample', file='D03.1', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=5, batch_id=1, type='sample', file='E02.1', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=6, batch_id=1, type='sample', file='E03.1', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=7, batch_id=1, type='sample', file='F02.1', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=8, batch_id=1, type='sample', file='F03.1', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=9, batch_id=1, type='sample', file='G02.1', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=10, batch_id=1, type='sample', file='G03.1', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=11, batch_id=1, type='sample', file='H02.1', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "INSERT INTO samples SET sample_id=12, batch_id=1, type='sample', file='H03.1', pop_id='3', group_id='1'"
+
+
+ustacks
+==========
+
+Sample 1 of 12 'A03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/A03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 1 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 1
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/A03.1.fq
+Loading RAD-Tags...done
+Loaded 54808 RAD-Tags.
+  Inserted 32417 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+35 initial stacks were populated; 32382 stacks were set aside as secondary reads.
+Initial coverage mean: 34.6; Std Dev: 10.6186; Max: 69
+Repetitive stacks removal threshold: 56 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+Removing repetitive stacks.
+  Removed 1 stacks.
+  35 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 33.5882; Std Dev: 8.9578; Max: 50
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (98 k-mers per read); 4 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  35 stacks merged into 35 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 33.5882; Std Dev: 8.9578; Max: 50
+Merging remainder radtags
+  53597 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (118 k-mers per read); 10 k-mer hits required.
+  Matched 656 remainder reads; unable to match 52941 remainder reads.
+After remainders merged, coverage depth Mean: 52.8824; Std Dev: 19.2197; Max: 130
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 1867
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/A03.1.fq... read 54808 sequence IDs.
+done.
+ustacks is done.
+
+Sample 2 of 12 'B03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/B03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 2 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 2
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/B03.1.fq
+Loading RAD-Tags...done
+Loaded 65925 RAD-Tags.
+  Inserted 40560 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+41 initial stacks were populated; 40519 stacks were set aside as secondary reads.
+Initial coverage mean: 33.7317; Std Dev: 12.4568; Max: 78
+Repetitive stacks removal threshold: 59 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (73 k-mers per read); 2 k-mer hits required.
+Removing repetitive stacks.
+  Removed 2 stacks.
+  41 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 31.7436; Std Dev: 8.97495; Max: 55
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (97 k-mers per read); 3 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  41 stacks merged into 41 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 31.7436; Std Dev: 8.97495; Max: 55
+Merging remainder radtags
+  64542 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (117 k-mers per read); 9 k-mer hits required.
+  Matched 602 remainder reads; unable to match 63940 remainder reads.
+After remainders merged, coverage depth Mean: 47.1795; Std Dev: 19.8531; Max: 120
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 1985
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/B03.1.fq... read 65925 sequence IDs.
+done.
+ustacks is done.
+
+Sample 3 of 12 'C03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/C03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 3 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 3
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/C03.1.fq
+Loading RAD-Tags...done
+Loaded 50465 RAD-Tags.
+  Inserted 29522 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+34 initial stacks were populated; 29488 stacks were set aside as secondary reads.
+Initial coverage mean: 33.1471; Std Dev: 9.68362; Max: 58
+Repetitive stacks removal threshold: 53 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 69 (73 k-mers per read); 4 k-mer hits required.
+Removing repetitive stacks.
+  Removed 1 stacks.
+  34 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 32.3939; Std Dev: 8.79373; Max: 52
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (95 k-mers per read); 1 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  34 stacks merged into 34 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 32.3939; Std Dev: 8.79373; Max: 52
+Merging remainder radtags
+  49338 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (115 k-mers per read); 7 k-mer hits required.
+  Matched 406 remainder reads; unable to match 48932 remainder reads.
+After remainders merged, coverage depth Mean: 44.697; Std Dev: 14.3474; Max: 84
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 1533
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/C03.1.fq... read 50465 sequence IDs.
+done.
+ustacks is done.
+
+Sample 4 of 12 'D03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/D03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 4 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 4
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/D03.1.fq
+Loading RAD-Tags...done
+Loaded 84076 RAD-Tags.
+  Inserted 49111 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+64 initial stacks were populated; 49047 stacks were set aside as secondary reads.
+Initial coverage mean: 43.0781; Std Dev: 20.9533; Max: 102
+Repetitive stacks removal threshold: 85 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 73 (74 k-mers per read); 1 k-mer hits required.
+Removing repetitive stacks.
+  Removed 2 stacks.
+  64 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 41.2903; Std Dev: 18.7224; Max: 85
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (100 k-mers per read); 6 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  64 stacks merged into 61 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 43.3898; Std Dev: 20.2602; Max: 87
+Merging remainder radtags
+  81319 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 29 (118 k-mers per read); 2 k-mer hits required.
+  Matched 1142 remainder reads; unable to match 80177 remainder reads.
+After remainders merged, coverage depth Mean: 62.7458; Std Dev: 33.9299; Max: 176
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 3899
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/D03.1.fq... read 84076 sequence IDs.
+done.
+ustacks is done.
+
+Sample 5 of 12 'E02.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E02.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 5 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 5
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E02.1.fq
+Loading RAD-Tags...done
+Loaded 82762 RAD-Tags.
+  Inserted 46472 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+52 initial stacks were populated; 46420 stacks were set aside as secondary reads.
+Initial coverage mean: 37.5; Std Dev: 16.9847; Max: 91
+Repetitive stacks removal threshold: 72 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+Removing repetitive stacks.
+  Removed 2 stacks.
+  52 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 35.44; Std Dev: 13.7669; Max: 72
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (98 k-mers per read); 4 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  52 stacks merged into 50 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 36.9167; Std Dev: 14.8952; Max: 76
+Merging remainder radtags
+  80812 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (118 k-mers per read); 10 k-mer hits required.
+  Matched 800 remainder reads; unable to match 80012 remainder reads.
+After remainders merged, coverage depth Mean: 53.5833; Std Dev: 27.5529; Max: 144
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 2750
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E02.1.fq... read 82762 sequence IDs.
+done.
+ustacks is done.
+
+Sample 6 of 12 'E03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 6 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 6
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E03.1.fq
+Loading RAD-Tags...done
+Loaded 56831 RAD-Tags.
+  Inserted 38499 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+26 initial stacks were populated; 38473 stacks were set aside as secondary reads.
+Initial coverage mean: 30.7692; Std Dev: 10.4635; Max: 56
+Repetitive stacks removal threshold: 52 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (75 k-mers per read); 4 k-mer hits required.
+Removing repetitive stacks.
+  Removed 1 stacks.
+  26 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 29.76; Std Dev: 9.34786; Max: 51
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (99 k-mers per read); 5 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  26 stacks merged into 26 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 29.76; Std Dev: 9.34786; Max: 51
+Merging remainder radtags
+  56031 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 29 (117 k-mers per read); 1 k-mer hits required.
+  Matched 333 remainder reads; unable to match 55698 remainder reads.
+After remainders merged, coverage depth Mean: 43.08; Std Dev: 17.5907; Max: 81
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 1133
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/E03.1.fq... read 56831 sequence IDs.
+done.
+ustacks is done.
+
+Sample 7 of 12 'F02.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F02.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 7 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 7
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F02.1.fq
+Loading RAD-Tags...done
+Loaded 52296 RAD-Tags.
+  Inserted 35877 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+14 initial stacks were populated; 35863 stacks were set aside as secondary reads.
+Initial coverage mean: 26.4286; Std Dev: 4.40315; Max: 35
+Repetitive stacks removal threshold: 36 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (72 k-mers per read); 1 k-mer hits required.
+Removing repetitive stacks.
+  Removed 0 stacks.
+  14 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 26.4286; Std Dev: 4.40315; Max: 35
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (96 k-mers per read); 2 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  14 stacks merged into 14 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 26.4286; Std Dev: 4.40315; Max: 35
+Merging remainder radtags
+  51926 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (116 k-mers per read); 8 k-mer hits required.
+  Matched 175 remainder reads; unable to match 51751 remainder reads.
+After remainders merged, coverage depth Mean: 38.9286; Std Dev: 15.1255; Max: 78
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 545
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F02.1.fq... read 52296 sequence IDs.
+done.
+ustacks is done.
+
+Sample 8 of 12 'F03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 8 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 8
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F03.1.fq
+Loading RAD-Tags...done
+Loaded 40945 RAD-Tags.
+  Inserted 25123 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+38 initial stacks were populated; 25085 stacks were set aside as secondary reads.
+Initial coverage mean: 36.1316; Std Dev: 15.3711; Max: 85
+Repetitive stacks removal threshold: 67 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (72 k-mers per read); 1 k-mer hits required.
+Removing repetitive stacks.
+  Removed 2 stacks.
+  38 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 33.8889; Std Dev: 12.2401; Max: 61
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (96 k-mers per read); 2 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  38 stacks merged into 38 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 33.8889; Std Dev: 12.2401; Max: 61
+Merging remainder radtags
+  39572 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (116 k-mers per read); 8 k-mer hits required.
+  Matched 539 remainder reads; unable to match 39033 remainder reads.
+After remainders merged, coverage depth Mean: 48.8611; Std Dev: 18.519; Max: 88
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 1912
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/F03.1.fq... read 40945 sequence IDs.
+done.
+ustacks is done.
+
+Sample 9 of 12 'G02.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G02.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 9 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 9
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G02.1.fq
+Loading RAD-Tags...done
+Loaded 45456 RAD-Tags.
+  Inserted 29591 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+24 initial stacks were populated; 29567 stacks were set aside as secondary reads.
+Initial coverage mean: 30.9167; Std Dev: 7.75627; Max: 48
+Repetitive stacks removal threshold: 47 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 69 (73 k-mers per read); 4 k-mer hits required.
+Removing repetitive stacks.
+  Removed 1 stacks.
+  24 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 30.1739; Std Dev: 7.03811; Max: 43
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (95 k-mers per read); 1 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  24 stacks merged into 24 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 30.1739; Std Dev: 7.03811; Max: 43
+Merging remainder radtags
+  44714 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (115 k-mers per read); 7 k-mer hits required.
+  Matched 299 remainder reads; unable to match 44415 remainder reads.
+After remainders merged, coverage depth Mean: 43.1739; Std Dev: 13.0872; Max: 69
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 1041
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G02.1.fq... read 45456 sequence IDs.
+done.
+ustacks is done.
+
+Sample 10 of 12 'G03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 10 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 10
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G03.1.fq
+Loading RAD-Tags...done
+Loaded 53918 RAD-Tags.
+  Inserted 36226 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+36 initial stacks were populated; 36190 stacks were set aside as secondary reads.
+Initial coverage mean: 38.5; Std Dev: 12.6524; Max: 89
+Repetitive stacks removal threshold: 64 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+Removing repetitive stacks.
+  Removed 1 stacks.
+  36 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 37.0571; Std Dev: 9.47159; Max: 59
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (98 k-mers per read); 4 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  36 stacks merged into 36 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 37.0571; Std Dev: 9.47159; Max: 59
+Merging remainder radtags
+  52532 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (118 k-mers per read); 10 k-mer hits required.
+  Matched 616 remainder reads; unable to match 51916 remainder reads.
+After remainders merged, coverage depth Mean: 54.6571; Std Dev: 20.7046; Max: 111
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 2002
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/G03.1.fq... read 53918 sequence IDs.
+done.
+ustacks is done.
+
+Sample 11 of 12 'H02.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H02.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 11 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 11
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H02.1.fq
+Loading RAD-Tags...done
+Loaded 40323 RAD-Tags.
+  Inserted 25937 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+26 initial stacks were populated; 25911 stacks were set aside as secondary reads.
+Initial coverage mean: 29; Std Dev: 8.51695; Max: 52
+Repetitive stacks removal threshold: 47 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+Removing repetitive stacks.
+  Removed 2 stacks.
+  26 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 27.2083; Std Dev: 6.05516; Max: 42
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (98 k-mers per read); 4 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  26 stacks merged into 26 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 27.2083; Std Dev: 6.05516; Max: 42
+Merging remainder radtags
+  39569 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (118 k-mers per read); 10 k-mer hits required.
+  Matched 313 remainder reads; unable to match 39256 remainder reads.
+After remainders merged, coverage depth Mean: 40.25; Std Dev: 12.4708; Max: 79
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 1067
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H02.1.fq... read 40323 sequence IDs.
+done.
+ustacks is done.
+
+Sample 12 of 12 'H03.1'
+----------
+/usr/local/bin/ustacks -t fastq -f /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H03.1.fq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -i 12 -m 20 -p 4 -d  2>&1
+ustacks parameters selected:
+  Sample ID: 12
+  Min depth of coverage to create a stack: 20
+  Max distance allowed between stacks: 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: enabled
+  Removal algorithm: enabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Gapped alignments: disabled
+
+Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H03.1.fq
+Loading RAD-Tags...done
+Loaded 78827 RAD-Tags.
+  Inserted 42398 elements into the RAD-Tags hash map.
+  0 reads contained uncalled nucleotides that were modified.
+56 initial stacks were populated; 42342 stacks were set aside as secondary reads.
+Initial coverage mean: 39.0714; Std Dev: 17.7973; Max: 118
+Repetitive stacks removal threshold: 75 (mean+2*stdev)
+Calculating distance for removing repetitive stacks.
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+Removing repetitive stacks.
+  Removed 2 stacks.
+  56 stacks remain for merging.
+Post-Repeat Removal, coverage depth Mean: 36.9074; Std Dev: 13.4829; Max: 72
+Calculating distance between stacks...
+  Distance allowed between stacks: 2; searching with a k-mer length of 47 (98 k-mers per read); 4 k-mer hits required.
+Merging stacks, maximum allowed distance: 2 nucleotide(s)
+  56 stacks merged into 56 loci; deleveraged 0 loci; blacklisted 0 loci.
+After merging, coverage depth Mean: 36.9074; Std Dev: 13.4829; Max: 72
+Merging remainder radtags
+  76639 remainder sequences left to merge.
+  Distance allowed between stacks: 4; searching with a k-mer length of 27 (118 k-mers per read); 10 k-mer hits required.
+  Matched 959 remainder reads; unable to match 75680 remainder reads.
+After remainders merged, coverage depth Mean: 54.6667; Std Dev: 20.4269; Max: 115
+Calling final consensus sequences, invoking SNP-calling model...
+Number of utilized reads: 3147
+Writing loci, SNPs, and alleles to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'...
+  Refetching sequencing IDs from /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/H03.1.fq... read 78827 sequence IDs.
+done.
+ustacks is done.
+
+Depths of Coverage for Processed Samples:
+A03.1: 52.8824x
+B03.1: 47.1795x
+C03.1: 44.697x
+D03.1: 62.7458x
+E02.1: 53.5833x
+E03.1: 43.08x
+F02.1: 38.9286x
+F03.1: 48.8611x
+G02.1: 43.1739x
+G03.1: 54.6571x
+H02.1: 40.25x
+H03.1: 54.6667x
+
+cstacks
+==========
+/usr/local/bin/cstacks -b 1 -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1  -p 4 2>&1
+
+cstacks parameters selected:
+  Database/Batch ID: 1
+  Loci matched based on sequence identity.
+  Number of mismatches allowed between stacks: 1
+  Gapped alignments: disabled
+Constructing catalog from 12 samples.
+
+Initializing new catalog...
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.alleles.tsv
+  34 loci were newly added to the catalog.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1 [2 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (73 k-mers per read); 2 k-mer hits required.
+  34 loci in the catalog, 2712 kmers in the catalog hash.
+Merging matches into catalog...
+  28 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  11 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1 [3 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 69 (73 k-mers per read); 4 k-mer hits required.
+  45 loci in the catalog, 3602 kmers in the catalog hash.
+Merging matches into catalog...
+  30 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  3 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1 [4 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 73 (74 k-mers per read); 1 k-mer hits required.
+  48 loci in the catalog, 3645 kmers in the catalog hash.
+Merging matches into catalog...
+  40 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  19 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1 [5 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+  67 loci in the catalog, 5418 kmers in the catalog hash.
+Merging matches into catalog...
+  39 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  9 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1 [6 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (75 k-mers per read); 4 k-mer hits required.
+  76 loci in the catalog, 6167 kmers in the catalog hash.
+Merging matches into catalog...
+  23 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  2 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1 [7 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (72 k-mers per read); 1 k-mer hits required.
+  78 loci in the catalog, 6321 kmers in the catalog hash.
+Merging matches into catalog...
+  13 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  1 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1 [8 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (72 k-mers per read); 1 k-mer hits required.
+  79 loci in the catalog, 6393 kmers in the catalog hash.
+Merging matches into catalog...
+  36 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  0 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1 [9 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 69 (73 k-mers per read); 4 k-mer hits required.
+  79 loci in the catalog, 6580 kmers in the catalog hash.
+Merging matches into catalog...
+  23 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  0 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1 [10 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+  79 loci in the catalog, 6428 kmers in the catalog hash.
+Merging matches into catalog...
+  35 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  0 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1 [11 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+  79 loci in the catalog, 6428 kmers in the catalog hash.
+Merging matches into catalog...
+  24 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  0 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1 [12 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.alleles.tsv
+Searching for sequence matches...
+  Distance allowed between stacks: 1; searching with a k-mer length of 71 (74 k-mers per read); 3 k-mer hits required.
+  79 loci in the catalog, 6452 kmers in the catalog hash.
+Merging matches into catalog...
+  51 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  3 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Writing catalog in directory '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/'.
+cstacks is done.
+
+sstacks
+==========
+/usr/local/bin/sstacks -b 1 -c /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1 -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1 -s /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1  -p 4 2>&1
+
+Searching for matches by sequence identity...
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.alleles.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1' [1 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.alleles.tsv
+Searching for sequence matches...
+34 stacks compared against the catalog containing 82 loci.
+  34 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  44 total haplotypes examined from matching loci, 44 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1' [2 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.alleles.tsv
+Searching for sequence matches...
+39 stacks compared against the catalog containing 82 loci.
+  39 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  43 total haplotypes examined from matching loci, 43 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1' [3 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.alleles.tsv
+Searching for sequence matches...
+33 stacks compared against the catalog containing 82 loci.
+  33 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  36 total haplotypes examined from matching loci, 36 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1' [4 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.alleles.tsv
+Searching for sequence matches...
+59 stacks compared against the catalog containing 82 loci.
+  59 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  67 total haplotypes examined from matching loci, 67 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1' [5 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.alleles.tsv
+Searching for sequence matches...
+48 stacks compared against the catalog containing 82 loci.
+  48 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  59 total haplotypes examined from matching loci, 59 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1' [6 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.alleles.tsv
+Searching for sequence matches...
+25 stacks compared against the catalog containing 82 loci.
+  25 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  28 total haplotypes examined from matching loci, 28 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1' [7 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.alleles.tsv
+Searching for sequence matches...
+14 stacks compared against the catalog containing 82 loci.
+  14 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  16 total haplotypes examined from matching loci, 16 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1' [8 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.alleles.tsv
+Searching for sequence matches...
+36 stacks compared against the catalog containing 82 loci.
+  36 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  43 total haplotypes examined from matching loci, 43 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1' [9 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.alleles.tsv
+Searching for sequence matches...
+23 stacks compared against the catalog containing 82 loci.
+  23 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  26 total haplotypes examined from matching loci, 26 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1' [10 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.alleles.tsv
+Searching for sequence matches...
+35 stacks compared against the catalog containing 82 loci.
+  35 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  40 total haplotypes examined from matching loci, 40 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1' [11 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.alleles.tsv
+Searching for sequence matches...
+24 stacks compared against the catalog containing 82 loci.
+  24 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  28 total haplotypes examined from matching loci, 28 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1' [12 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.alleles.tsv
+Searching for sequence matches...
+54 stacks compared against the catalog containing 82 loci.
+  54 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  64 total haplotypes examined from matching loci, 64 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.matches.tsv
+
+sstacks is done.
+
+populations
+==========
+/usr/local/bin/populations -b 1 -P /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo -s -M /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/pop_map/pop_map -t 4 --genepop --vcf --vcf_haplotypes --structure 2>&1
+populations parameters selected:
+  Fst kernel smoothing: off
+  Bootstrap resampling: off
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Minimum stack depth: 0
+  Log liklihood filtering: off; threshold: 0
+  Minor allele frequency cutoff: 0
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+
+Parsing population map...
+The population map contained 12 samples, 3 population(s), 1 group(s).
+Reading the catalog...
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.alleles.tsv
+Reading matches to the catalog...
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.matches.tsv
+Catalog is not reference aligned, arbitrarily ordering catalog loci.
+Working on 12 samples.
+Working on 3 population(s):
+    1: A03.1, B03.1, C03.1, D03.1
+    2: E02.1, E03.1, F02.1, F03.1
+    3: G02.1, G03.1, H02.1, H03.1
+Working on 1 group(s) of populations:
+    defaultgrp: 1, 2, 3
+Populating observed haplotypes for 12 samples, 82 loci.
+Writing SQL markers file to '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.markers.tsv'
+Removing 0 loci that did not pass sample/population constraints... retained 82 loci.
+Loading model outputs for 12 samples, 82 loci.
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.models.tsv
+Generating nucleotide-level summary statistics for population '1'
+Population '1' contained 0 incompatible loci -- more than two alleles present.
+Generating nucleotide-level summary statistics for population '2'
+Population '2' contained 0 incompatible loci -- more than two alleles present.
+Generating nucleotide-level summary statistics for population '3'
+Population '3' contained 0 incompatible loci -- more than two alleles present.
+Tallying loci across populations...done.
+Pruned 0 variant sites due to filter constraints (more with --verbose).
+Removing 0 additional loci for which all variant sites were filtered... retained 82 loci.
+Regenerating nucleotide-level summary statistics for population '1'
+Population '1' contained 0 incompatible loci -- more than two alleles present.
+Regenerating nucleotide-level summary statistics for population '2'
+Population '2' contained 0 incompatible loci -- more than two alleles present.
+Regenerating nucleotide-level summary statistics for population '3'
+Population '3' contained 0 incompatible loci -- more than two alleles present.
+Re-tallying loci across populations...done.
+Generating haplotype-level summary statistics for population '1'
+Generating haplotype-level summary statistics for population '2'
+Generating haplotype-level summary statistics for population '3'
+Writing 82 loci to summary statistics file, '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.sumstats.tsv'
+Writing 82 loci to observed haplotype file, '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.haplotypes.tsv'
+Writing population data to GenePop file '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.genepop'
+Writing population data to Structure file '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.structure.tsv'...done.
+Writing population data haplotypes to VCF file '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.haplotypes.vcf'
+Writing population data to VCF file '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.vcf'
+Populations is done.
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.tags.tsv' INTO TABLE catalog_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.snps.tsv' INTO TABLE catalog_snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.catalog.alleles.tsv' INTO TABLE catalog_alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/A03.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/B03.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/C03.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/D03.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E02.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/E03.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F02.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/F03.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G02.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/G03.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H02.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/H03.1.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.markers.tsv' INTO TABLE markers IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.sumstats.tsv' INTO TABLE sumstats IGNORE 4 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/denovo/batch_1.hapstats.tsv' INTO TABLE hapstats IGNORE 4 LINES"
+
+/usr/local/bin/index_radtags.pl -D PM_demo_SE20_radtags -t -c 2>&1
+Generating catalog tag index
+  Fetching catalog SNPs...done.
+  Fetching markers...done.
+  Fetching genotypes...done.
+  Fetching associated sequences...done.
+  Fetching catalog matches...done.
+  Assembling catalog tags at the database...done.
+  Processing catalog tags
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/tmp/catalog_index_BaU5IFXi' INTO TABLE catalog_index"
+Generating unique tag index...
+Processing sample 1 of 60       Processing sample 2 of 60       Processing sample 3 of 60       Processing sample 4 of 60       Processing sample 5 of 60       Processing sample 6 of 60       Processing sample 7 of 60       Processing sample 8 of 60       Processing sample 9 of 60       Processing sample 10 of 60       Processing sample 11 of 60       Processing sample 12 of 60       Processing sample 13 of 60       Processing sample 14 of 60       Processing sample 15 of 60       Processing sample 16 of 60       Processing sample 17 of 60       Processing sample 18 of 60       Processing sample 19 of 60       Processing sample 20 of 60       Processing sample 21 of 60       Processing sample 22 of 60       Processing sample 23 of 60       Processing sample 24 of 60       Processing sample 25 of 60       Processing sample 26 of 60       Processing sample 27 of 60       Processing sample 28 of 60       Processing sample 29 of 60       Processing sample 30 of 60       Processing sample 31 of 60       Processing sample 32 of 60       Processing sample 33 of 60       Processing sample 34 of 60       Processing sample 35 of 60       Processing sample 36 of 60       Processing sample 37 of 60       Processing sample 38 of 60       Processing sample 39 of 60       Processing sample 40 of 60       Processing sample 41 of 60       Processing sample 42 of 60       Processing sample 43 of 60       Processing sample 44 of 60       Processing sample 45 of 60       Processing sample 46 of 60       Processing sample 47 of 60       Processing sample 48 of 60       Processing sample 49 of 60       Processing sample 50 of 60       Processing sample 51 of 60       Processing sample 52 of 60       Processing sample 53 of 60       Processing sample 54 of 60       Processing sample 55 of 60       Processing sample 56 of 60       Processing sample 57 of 60       Processing sample 58 of 60       Processing sample 59 of 60       Processing sample 60 of 60       
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf PM_demo_SE20_radtags -e "LOAD DATA LOCAL INFILE '/tmp/tag_index_ApaVzND9' INTO TABLE tag_index"
+
+denovo_map.pl completed at 2017-10-25 22:56:10

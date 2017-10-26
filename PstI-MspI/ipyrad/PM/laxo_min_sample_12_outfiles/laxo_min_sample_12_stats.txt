@@ -1,0 +1,90 @@
+
+
+## The number of loci caught by each filter.
+## ipyrad API location: [assembly].stats_dfs.s7_filters
+
+                            total_filters  applied_order  retained_loci
+total_prefiltered_loci               7325              0           7325
+filtered_by_rm_duplicates              42             42           7283
+filtered_by_max_indels                  0              0           7283
+filtered_by_max_snps                    2              0           7283
+filtered_by_max_shared_het            104            100           7183
+filtered_by_min_sample               7055           7022            161
+filtered_by_max_alleles               140              6            155
+total_filtered_loci                   155              0            155
+
+
+## The number of loci recovered for each Sample.
+## ipyrad API location: [assembly].stats_dfs.s7_samples
+
+     sample_coverage
+A03              155
+B03              155
+C03              155
+D03              155
+E02              155
+E03              155
+F02              155
+F03              155
+G02              155
+G03              155
+H02              155
+H03              155
+
+
+## The number of loci for which N taxa have data.
+## ipyrad API location: [assembly].stats_dfs.s7_loci
+
+    locus_coverage  sum_coverage
+1                0             0
+2                0             0
+3                0             0
+4                0             0
+5                0             0
+6                0             0
+7                0             0
+8                0             0
+9                0             0
+10               0             0
+11               0             0
+12             155           155
+
+
+## The distribution of SNPs (var and pis) per locus.
+## var = Number of loci with n variable sites (pis + autapomorphies)
+## pis = Number of loci with n parsimony informative site (minor allele in >1 sample)
+## ipyrad API location: [assembly].stats_dfs.s7_snps
+
+    var  sum_var  pis  sum_pis
+0   110        0  125        0
+1    27       27   21       21
+2    14       55    6       33
+3     2       61    2       39
+4     0       61    0       39
+5     0       61    0       39
+6     1       67    0       39
+7     0       67    0       39
+8     0       67    0       39
+9     0       67    0       39
+10    0       67    0       39
+11    0       67    0       39
+12    0       67    0       39
+13    0       67    0       39
+14    1       81    1       53
+
+
+## Final Sample stats summary
+
+     state  reads_raw  reads_passed_filter  clusters_total  clusters_hidepth  hetero_est  error_est  reads_consens  loci_in_assembly
+A03      7      70715                70486           20654              4412    0.005646   0.000960           4382               155
+B03      7      85914                85590           29396              4844    0.005185   0.001038           4808               155
+C03      7      64481                64295           20012              4008    0.004738   0.000915           3988               155
+D03      7     109634               109278           37526              5728    0.004037   0.000931           5686               155
+E02      7     112366               111961           34967              6069    0.004747   0.000978           6015               155
+E03      7      74948                74690           31783              3537    0.005394   0.000964           3504               155
+F02      7      67768                67543           28158              3059    0.006553   0.001089           3038               155
+F03      7      54237                54052           17607              3040    0.006381   0.000956           3023               155
+G02      7      58490                58310           21159              3086    0.006217   0.000962           3066               155
+G03      7      72596                72317           29722              3533    0.005261   0.000975           3516               155
+H02      7      51772                51559           16964              2700    0.007006   0.000968           2686               155
+H03      7      98976                98673           25128              6050    0.003939   0.000896           6018               155

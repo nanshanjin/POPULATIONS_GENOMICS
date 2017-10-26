@@ -1,0 +1,32 @@
+raw_file                               total_reads    cut_found  bar_matched
+MslI_R1_                                   2206778      2205537       142799
+MslI_R2_                                   2206778      2205537       142799
+
+sample_name                            total_reads
+A03                                          14621
+B03                                          11616
+C03                                          13753
+D03                                           8461
+E02                                          11068
+E03                                          10485
+F02                                           9801
+F03                                          12639
+G02                                          10726
+G03                                           9152
+H02                                          13428
+H03                                          17049
+
+sample_name                               true_bar       obs_bar     N_records
+A03                                        CTCCTTA       CTCCTTA         14621
+B03                                        CATGTCT       CATGTCT         11616
+C03                                          TTAGA         TTAGA         13753
+D03                                        TCCGTCT       TCCGTCT          8461
+E02                                         GTTGCT        GTTGCT         11068
+E03                                       CTCGTAAG      CTCGTAAG         10485
+F02                                        TACGACC       TACGACC          9801
+F03                                          GGTCT         GGTCT         12639
+G02                                          TGGCT         TGGCT         10726
+G03                                        GCGCATA       GCGCATA          9152
+H02                                         TAGCCA        TAGCCA         13428
+H03                                         GCCACA        GCCACA         17049
+no_match                                         _            _      2063979
