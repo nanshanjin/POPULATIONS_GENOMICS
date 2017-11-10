@@ -1,0 +1,2236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet_PGD.xsl"?>
+<PGD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PGD_schema.xsd">
+  <header>
+    <numPop>3</numPop>
+    <missing>?</missing>
+    <gap>-</gap>
+    <ploidy>2</ploidy>
+    <gameticPhase>unknown</gameticPhase>
+  </header>
+  <dataDescription>
+    <dataType>SNP</dataType>
+    <locus id="111_71">
+      <locusChromosome>C69101436</locusChromosome>
+      <locusLocation>931</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="111_117">
+      <locusChromosome>C69101436</locusChromosome>
+      <locusLocation>977</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="49_10">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934065</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="49_91">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934146</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="49_135">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934190</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="2_66">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487356</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_63">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487359</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_30">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487392</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_10">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487412</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="50_12">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6856</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="50_69">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6913</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="50_86">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6930</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="50_100">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6944</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="51_144">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6944</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="51_49">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>7039</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="51_14">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>7074</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="79_94">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371025</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="80_91">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371025</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="79_96">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371027</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="80_89">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371027</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="59_10">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>19964</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="59_127">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20081</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="59_133">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20087</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="59_144">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20098</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="60_149">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20271</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="60_148">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20272</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="60_137">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20283</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="83_96">
+      <locusChromosome>scaffold1270</locusChromosome>
+      <locusLocation>341200</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="114_87">
+      <locusChromosome>scaffold1329</locusChromosome>
+      <locusLocation>132690</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="114_74">
+      <locusChromosome>scaffold1329</locusChromosome>
+      <locusLocation>132703</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="61_102">
+      <locusChromosome>scaffold1596</locusChromosome>
+      <locusLocation>1825600</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="118_102">
+      <locusChromosome>scaffold16004</locusChromosome>
+      <locusLocation>20795</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="119_88">
+      <locusChromosome>scaffold16004</locusChromosome>
+      <locusLocation>20795</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="86_12">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179847</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="86_58">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179893</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="86_66">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179901</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="53_96">
+      <locusChromosome>scaffold1803</locusChromosome>
+      <locusLocation>637260</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="109_89">
+      <locusChromosome>scaffold1831</locusChromosome>
+      <locusLocation>1599152</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="109_138">
+      <locusChromosome>scaffold1831</locusChromosome>
+      <locusLocation>1599201</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="87_27">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3784</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="87_34">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3791</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="87_63">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3820</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="62_2">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50587</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="13_41">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50932</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="14_149">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50932</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="13_66">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50957</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="13_102">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50993</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="14_88">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50993</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="13_112">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51003</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="14_78">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51003</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="14_5">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51076</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="130_39">
+      <locusChromosome>scaffold23155</locusChromosome>
+      <locusLocation>10643</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="199_51">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>479</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="199_55">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>483</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="200_72">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>597</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="200_56">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>613</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="89_135">
+      <locusChromosome>scaffold244</locusChromosome>
+      <locusLocation>924460</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="65_57">
+      <locusChromosome>scaffold2470</locusChromosome>
+      <locusLocation>145982</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="90_30">
+      <locusChromosome>scaffold2494</locusChromosome>
+      <locusLocation>1499478</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="90_69">
+      <locusChromosome>scaffold2494</locusChromosome>
+      <locusLocation>1499517</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="136_20">
+      <locusChromosome>scaffold256</locusChromosome>
+      <locusLocation>252056</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="136_115">
+      <locusChromosome>scaffold256</locusChromosome>
+      <locusLocation>252151</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="18_44">
+      <locusChromosome>scaffold2571</locusChromosome>
+      <locusLocation>11423</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="201_107">
+      <locusChromosome>scaffold26167</locusChromosome>
+      <locusLocation>2775</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="201_1">
+      <locusChromosome>scaffold26167</locusChromosome>
+      <locusLocation>2881</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="139_41">
+      <locusChromosome>scaffold2708</locusChromosome>
+      <locusLocation>549027</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_44">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192372</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_77">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192405</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_115">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192443</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="140_81">
+      <locusChromosome>scaffold2867</locusChromosome>
+      <locusLocation>765419</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="203_66">
+      <locusChromosome>scaffold2961</locusChromosome>
+      <locusLocation>14818</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="203_10">
+      <locusChromosome>scaffold2961</locusChromosome>
+      <locusLocation>14874</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="204_17">
+      <locusChromosome>scaffold3372</locusChromosome>
+      <locusLocation>44328</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="94_71">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10704</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_70">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10705</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="94_33">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10742</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_32">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10743</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="94_23">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10752</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_15">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10760</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="30_19">
+      <locusChromosome>scaffold37055</locusChromosome>
+      <locusLocation>2652</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="98_35">
+      <locusChromosome>scaffold4243</locusChromosome>
+      <locusLocation>58942</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="147_14">
+      <locusChromosome>scaffold4245</locusChromosome>
+      <locusLocation>121795</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="147_31">
+      <locusChromosome>scaffold4245</locusChromosome>
+      <locusLocation>121812</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="100_131">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>24371</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="57_61">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>24371</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="154_122">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121433</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="99_115">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121433</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="99_83">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121465</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="101_95">
+      <locusChromosome>scaffold4704</locusChromosome>
+      <locusLocation>19505</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="73_32">
+      <locusChromosome>scaffold5524</locusChromosome>
+      <locusLocation>1058546</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="74_1">
+      <locusChromosome>scaffold558</locusChromosome>
+      <locusLocation>658616</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="74_68">
+      <locusChromosome>scaffold558</locusChromosome>
+      <locusLocation>658683</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="68_0">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33593</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="68_20">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33613</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="68_128">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33721</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_141">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33721</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_98">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33764</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_82">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33780</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_57">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33805</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="69_52">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33810</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_50">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33812</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_31">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33831</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="102_97">
+      <locusChromosome>scaffold570</locusChromosome>
+      <locusLocation>1853662</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="75_55">
+      <locusChromosome>scaffold612</locusChromosome>
+      <locusLocation>373730</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="37_9">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33736</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="37_32">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33759</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="37_55">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33782</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_80">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33807</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_97">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33824</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_112">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33839</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="70_97">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33839</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="70_65">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33871</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="70_23">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33913</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="209_33">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33921</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="38_83">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71433</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="39_106">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71433</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="39_23">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71516</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="210_117">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>89345</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="103_133">
+      <locusChromosome>scaffold6850</locusChromosome>
+      <locusLocation>12088</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="43_84">
+      <locusChromosome>scaffold68687</locusChromosome>
+      <locusLocation>3786</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="188_108">
+      <locusChromosome>scaffold7000</locusChromosome>
+      <locusLocation>86896</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="189_122">
+      <locusChromosome>scaffold7000</locusChromosome>
+      <locusLocation>86896</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="166_104">
+      <locusChromosome>scaffold748</locusChromosome>
+      <locusLocation>1921250</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="71_87">
+      <locusChromosome>scaffold7819</locusChromosome>
+      <locusLocation>75017</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="211_56">
+      <locusChromosome>scaffold7898</locusChromosome>
+      <locusLocation>20996</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="212_141">
+      <locusChromosome>scaffold7898</locusChromosome>
+      <locusLocation>20996</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="72_92">
+      <locusChromosome>scaffold8065</locusChromosome>
+      <locusLocation>225567</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="214_82">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755635</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_66">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755651</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_63">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755654</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_10">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755707</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="46_2">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103767</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_6">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103771</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="46_20">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103785</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_28">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103793</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="46_60">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103825</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="46_61">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103826</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_95">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103860</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_133">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103898</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_135">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103900</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="47_49">
+      <locusChromosome>scaffold9292</locusChromosome>
+      <locusLocation>259162</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="47_119">
+      <locusChromosome>scaffold9292</locusChromosome>
+      <locusLocation>259232</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="105_35">
+      <locusChromosome>scaffold9704</locusChromosome>
+      <locusLocation>39871</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="105_137">
+      <locusChromosome>scaffold9704</locusChromosome>
+      <locusLocation>39973</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="111_71">
+      <locusChromosome>C69101436</locusChromosome>
+      <locusLocation>931</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="111_117">
+      <locusChromosome>C69101436</locusChromosome>
+      <locusLocation>977</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="49_10">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934065</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="49_91">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934146</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="49_135">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934190</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="2_66">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487356</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_63">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487359</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_30">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487392</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_10">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487412</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="50_12">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6856</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="50_69">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6913</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="50_86">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6930</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="50_100">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6944</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="51_144">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6944</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="51_49">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>7039</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="51_14">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>7074</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="79_94">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371025</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="80_91">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371025</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="79_96">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371027</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="80_89">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371027</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="59_10">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>19964</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="59_127">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20081</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="59_133">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20087</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="59_144">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20098</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="60_149">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20271</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="60_148">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20272</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="60_137">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20283</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="83_96">
+      <locusChromosome>scaffold1270</locusChromosome>
+      <locusLocation>341200</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="114_87">
+      <locusChromosome>scaffold1329</locusChromosome>
+      <locusLocation>132690</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="114_74">
+      <locusChromosome>scaffold1329</locusChromosome>
+      <locusLocation>132703</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="61_102">
+      <locusChromosome>scaffold1596</locusChromosome>
+      <locusLocation>1825600</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="118_102">
+      <locusChromosome>scaffold16004</locusChromosome>
+      <locusLocation>20795</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="119_88">
+      <locusChromosome>scaffold16004</locusChromosome>
+      <locusLocation>20795</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="86_12">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179847</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="86_58">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179893</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="86_66">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179901</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="53_96">
+      <locusChromosome>scaffold1803</locusChromosome>
+      <locusLocation>637260</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="109_89">
+      <locusChromosome>scaffold1831</locusChromosome>
+      <locusLocation>1599152</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="109_138">
+      <locusChromosome>scaffold1831</locusChromosome>
+      <locusLocation>1599201</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="87_27">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3784</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="87_34">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3791</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="87_63">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3820</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="62_2">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50587</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="13_41">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50932</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="14_149">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50932</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="13_66">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50957</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="13_102">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50993</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="14_88">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50993</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="13_112">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51003</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="14_78">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51003</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="14_5">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51076</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="130_39">
+      <locusChromosome>scaffold23155</locusChromosome>
+      <locusLocation>10643</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="199_51">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>479</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="199_55">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>483</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="200_72">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>597</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="200_56">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>613</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="89_135">
+      <locusChromosome>scaffold244</locusChromosome>
+      <locusLocation>924460</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="65_57">
+      <locusChromosome>scaffold2470</locusChromosome>
+      <locusLocation>145982</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="90_30">
+      <locusChromosome>scaffold2494</locusChromosome>
+      <locusLocation>1499478</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="90_69">
+      <locusChromosome>scaffold2494</locusChromosome>
+      <locusLocation>1499517</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="136_20">
+      <locusChromosome>scaffold256</locusChromosome>
+      <locusLocation>252056</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="136_115">
+      <locusChromosome>scaffold256</locusChromosome>
+      <locusLocation>252151</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="18_44">
+      <locusChromosome>scaffold2571</locusChromosome>
+      <locusLocation>11423</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="201_107">
+      <locusChromosome>scaffold26167</locusChromosome>
+      <locusLocation>2775</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="201_1">
+      <locusChromosome>scaffold26167</locusChromosome>
+      <locusLocation>2881</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="139_41">
+      <locusChromosome>scaffold2708</locusChromosome>
+      <locusLocation>549027</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_44">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192372</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_77">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192405</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_115">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192443</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="140_81">
+      <locusChromosome>scaffold2867</locusChromosome>
+      <locusLocation>765419</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="203_66">
+      <locusChromosome>scaffold2961</locusChromosome>
+      <locusLocation>14818</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="203_10">
+      <locusChromosome>scaffold2961</locusChromosome>
+      <locusLocation>14874</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="204_17">
+      <locusChromosome>scaffold3372</locusChromosome>
+      <locusLocation>44328</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="94_71">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10704</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_70">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10705</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="94_33">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10742</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_32">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10743</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="94_23">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10752</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_15">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10760</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="30_19">
+      <locusChromosome>scaffold37055</locusChromosome>
+      <locusLocation>2652</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="98_35">
+      <locusChromosome>scaffold4243</locusChromosome>
+      <locusLocation>58942</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="147_14">
+      <locusChromosome>scaffold4245</locusChromosome>
+      <locusLocation>121795</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="147_31">
+      <locusChromosome>scaffold4245</locusChromosome>
+      <locusLocation>121812</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="100_131">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>24371</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="57_61">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>24371</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="154_122">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121433</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="99_115">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121433</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="99_83">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121465</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="101_95">
+      <locusChromosome>scaffold4704</locusChromosome>
+      <locusLocation>19505</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="73_32">
+      <locusChromosome>scaffold5524</locusChromosome>
+      <locusLocation>1058546</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="74_1">
+      <locusChromosome>scaffold558</locusChromosome>
+      <locusLocation>658616</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="74_68">
+      <locusChromosome>scaffold558</locusChromosome>
+      <locusLocation>658683</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="68_0">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33593</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="68_20">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33613</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="68_128">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33721</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_141">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33721</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_98">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33764</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_82">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33780</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_57">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33805</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="69_52">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33810</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_50">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33812</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_31">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33831</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="102_97">
+      <locusChromosome>scaffold570</locusChromosome>
+      <locusLocation>1853662</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="75_55">
+      <locusChromosome>scaffold612</locusChromosome>
+      <locusLocation>373730</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="37_9">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33736</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="37_32">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33759</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="37_55">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33782</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_80">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33807</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_97">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33824</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_112">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33839</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="70_97">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33839</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="70_65">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33871</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="70_23">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33913</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="209_33">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33921</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="38_83">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71433</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="39_106">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71433</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="39_23">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71516</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="210_117">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>89345</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="103_133">
+      <locusChromosome>scaffold6850</locusChromosome>
+      <locusLocation>12088</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="43_84">
+      <locusChromosome>scaffold68687</locusChromosome>
+      <locusLocation>3786</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="188_108">
+      <locusChromosome>scaffold7000</locusChromosome>
+      <locusLocation>86896</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="189_122">
+      <locusChromosome>scaffold7000</locusChromosome>
+      <locusLocation>86896</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="166_104">
+      <locusChromosome>scaffold748</locusChromosome>
+      <locusLocation>1921250</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="71_87">
+      <locusChromosome>scaffold7819</locusChromosome>
+      <locusLocation>75017</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="211_56">
+      <locusChromosome>scaffold7898</locusChromosome>
+      <locusLocation>20996</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="212_141">
+      <locusChromosome>scaffold7898</locusChromosome>
+      <locusLocation>20996</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="72_92">
+      <locusChromosome>scaffold8065</locusChromosome>
+      <locusLocation>225567</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="214_82">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755635</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_66">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755651</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_63">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755654</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_10">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755707</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="46_2">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103767</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_6">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103771</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="46_20">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103785</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_28">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103793</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="46_60">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103825</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="46_61">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103826</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_95">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103860</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_133">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103898</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_135">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103900</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="47_49">
+      <locusChromosome>scaffold9292</locusChromosome>
+      <locusLocation>259162</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="47_119">
+      <locusChromosome>scaffold9292</locusChromosome>
+      <locusLocation>259232</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="105_35">
+      <locusChromosome>scaffold9704</locusChromosome>
+      <locusLocation>39871</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="105_137">
+      <locusChromosome>scaffold9704</locusChromosome>
+      <locusLocation>39973</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="111_71">
+      <locusChromosome>C69101436</locusChromosome>
+      <locusLocation>931</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="111_117">
+      <locusChromosome>C69101436</locusChromosome>
+      <locusLocation>977</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="49_10">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934065</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="49_91">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934146</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="49_135">
+      <locusChromosome>scaffold1070</locusChromosome>
+      <locusLocation>934190</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="2_66">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487356</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_63">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487359</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_30">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487392</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="2_10">
+      <locusChromosome>scaffold1125</locusChromosome>
+      <locusLocation>487412</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="50_12">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6856</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="50_69">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6913</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="50_86">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6930</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="50_100">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6944</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="51_144">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>6944</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="51_49">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>7039</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="51_14">
+      <locusChromosome>scaffold12</locusChromosome>
+      <locusLocation>7074</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="79_94">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371025</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="80_91">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371025</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="79_96">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371027</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="80_89">
+      <locusChromosome>scaffold1216</locusChromosome>
+      <locusLocation>2371027</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="59_10">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>19964</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="59_127">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20081</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="59_133">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20087</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="59_144">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20098</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="60_149">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20271</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="60_148">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20272</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="60_137">
+      <locusChromosome>scaffold12523</locusChromosome>
+      <locusLocation>20283</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="83_96">
+      <locusChromosome>scaffold1270</locusChromosome>
+      <locusLocation>341200</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="114_87">
+      <locusChromosome>scaffold1329</locusChromosome>
+      <locusLocation>132690</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="114_74">
+      <locusChromosome>scaffold1329</locusChromosome>
+      <locusLocation>132703</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="61_102">
+      <locusChromosome>scaffold1596</locusChromosome>
+      <locusLocation>1825600</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="118_102">
+      <locusChromosome>scaffold16004</locusChromosome>
+      <locusLocation>20795</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="119_88">
+      <locusChromosome>scaffold16004</locusChromosome>
+      <locusLocation>20795</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="86_12">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179847</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="86_58">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179893</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="86_66">
+      <locusChromosome>scaffold1734</locusChromosome>
+      <locusLocation>179901</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="53_96">
+      <locusChromosome>scaffold1803</locusChromosome>
+      <locusLocation>637260</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="109_89">
+      <locusChromosome>scaffold1831</locusChromosome>
+      <locusLocation>1599152</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="109_138">
+      <locusChromosome>scaffold1831</locusChromosome>
+      <locusLocation>1599201</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="87_27">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3784</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="87_34">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3791</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="87_63">
+      <locusChromosome>scaffold20840</locusChromosome>
+      <locusLocation>3820</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="62_2">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50587</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="13_41">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50932</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="14_149">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50932</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="13_66">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50957</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="13_102">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50993</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="14_88">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>50993</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="13_112">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51003</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="14_78">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51003</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="14_5">
+      <locusChromosome>scaffold21619</locusChromosome>
+      <locusLocation>51076</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="130_39">
+      <locusChromosome>scaffold23155</locusChromosome>
+      <locusLocation>10643</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="199_51">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>479</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="199_55">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>483</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="200_72">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>597</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="200_56">
+      <locusChromosome>scaffold23637</locusChromosome>
+      <locusLocation>613</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="89_135">
+      <locusChromosome>scaffold244</locusChromosome>
+      <locusLocation>924460</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="65_57">
+      <locusChromosome>scaffold2470</locusChromosome>
+      <locusLocation>145982</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="90_30">
+      <locusChromosome>scaffold2494</locusChromosome>
+      <locusLocation>1499478</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="90_69">
+      <locusChromosome>scaffold2494</locusChromosome>
+      <locusLocation>1499517</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="136_20">
+      <locusChromosome>scaffold256</locusChromosome>
+      <locusLocation>252056</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="136_115">
+      <locusChromosome>scaffold256</locusChromosome>
+      <locusLocation>252151</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="18_44">
+      <locusChromosome>scaffold2571</locusChromosome>
+      <locusLocation>11423</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="201_107">
+      <locusChromosome>scaffold26167</locusChromosome>
+      <locusLocation>2775</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="201_1">
+      <locusChromosome>scaffold26167</locusChromosome>
+      <locusLocation>2881</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="139_41">
+      <locusChromosome>scaffold2708</locusChromosome>
+      <locusLocation>549027</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_44">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192372</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_77">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192405</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="91_115">
+      <locusChromosome>scaffold2721</locusChromosome>
+      <locusLocation>192443</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="140_81">
+      <locusChromosome>scaffold2867</locusChromosome>
+      <locusLocation>765419</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="203_66">
+      <locusChromosome>scaffold2961</locusChromosome>
+      <locusLocation>14818</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="203_10">
+      <locusChromosome>scaffold2961</locusChromosome>
+      <locusLocation>14874</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="204_17">
+      <locusChromosome>scaffold3372</locusChromosome>
+      <locusLocation>44328</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="94_71">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10704</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_70">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10705</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="94_33">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10742</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_32">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10743</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="94_23">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10752</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="94_15">
+      <locusChromosome>scaffold34066</locusChromosome>
+      <locusLocation>10760</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="30_19">
+      <locusChromosome>scaffold37055</locusChromosome>
+      <locusLocation>2652</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="98_35">
+      <locusChromosome>scaffold4243</locusChromosome>
+      <locusLocation>58942</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="147_14">
+      <locusChromosome>scaffold4245</locusChromosome>
+      <locusLocation>121795</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="147_31">
+      <locusChromosome>scaffold4245</locusChromosome>
+      <locusLocation>121812</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="100_131">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>24371</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="57_61">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>24371</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="154_122">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121433</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="99_115">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121433</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="99_83">
+      <locusChromosome>scaffold4563</locusChromosome>
+      <locusLocation>121465</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="101_95">
+      <locusChromosome>scaffold4704</locusChromosome>
+      <locusLocation>19505</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="73_32">
+      <locusChromosome>scaffold5524</locusChromosome>
+      <locusLocation>1058546</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="74_1">
+      <locusChromosome>scaffold558</locusChromosome>
+      <locusLocation>658616</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="74_68">
+      <locusChromosome>scaffold558</locusChromosome>
+      <locusLocation>658683</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="68_0">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33593</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="68_20">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33613</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="68_128">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33721</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_141">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33721</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_98">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33764</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_82">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33780</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_57">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33805</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="69_52">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33810</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_50">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33812</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="69_31">
+      <locusChromosome>scaffold5606</locusChromosome>
+      <locusLocation>33831</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="102_97">
+      <locusChromosome>scaffold570</locusChromosome>
+      <locusLocation>1853662</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="75_55">
+      <locusChromosome>scaffold612</locusChromosome>
+      <locusLocation>373730</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="37_9">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33736</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="37_32">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33759</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="37_55">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33782</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_80">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33807</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_97">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33824</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="37_112">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33839</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="70_97">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33839</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="70_65">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33871</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="70_23">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33913</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="209_33">
+      <locusChromosome>scaffold6362</locusChromosome>
+      <locusLocation>33921</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="38_83">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71433</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="39_106">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71433</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="39_23">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>71516</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="210_117">
+      <locusChromosome>scaffold6697</locusChromosome>
+      <locusLocation>89345</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="103_133">
+      <locusChromosome>scaffold6850</locusChromosome>
+      <locusLocation>12088</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="43_84">
+      <locusChromosome>scaffold68687</locusChromosome>
+      <locusLocation>3786</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="188_108">
+      <locusChromosome>scaffold7000</locusChromosome>
+      <locusLocation>86896</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="189_122">
+      <locusChromosome>scaffold7000</locusChromosome>
+      <locusLocation>86896</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="166_104">
+      <locusChromosome>scaffold748</locusChromosome>
+      <locusLocation>1921250</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="71_87">
+      <locusChromosome>scaffold7819</locusChromosome>
+      <locusLocation>75017</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="211_56">
+      <locusChromosome>scaffold7898</locusChromosome>
+      <locusLocation>20996</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="212_141">
+      <locusChromosome>scaffold7898</locusChromosome>
+      <locusLocation>20996</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="72_92">
+      <locusChromosome>scaffold8065</locusChromosome>
+      <locusLocation>225567</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="214_82">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755635</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_66">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755651</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_63">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755654</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="214_10">
+      <locusChromosome>scaffold835</locusChromosome>
+      <locusLocation>755707</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="46_2">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103767</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_6">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103771</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="46_20">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103785</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_28">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103793</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="46_60">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103825</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="46_61">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103826</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_95">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103860</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_133">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103898</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="46_135">
+      <locusChromosome>scaffold9169</locusChromosome>
+      <locusLocation>103900</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="47_49">
+      <locusChromosome>scaffold9292</locusChromosome>
+      <locusLocation>259162</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="47_119">
+      <locusChromosome>scaffold9292</locusChromosome>
+      <locusLocation>259232</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="105_35">
+      <locusChromosome>scaffold9704</locusChromosome>
+      <locusLocation>39871</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="105_137">
+      <locusChromosome>scaffold9704</locusChromosome>
+      <locusLocation>39973</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <numLoci>144</numLoci>
+  </dataDescription>
+  <population name="dep1">
+    <popSize>4</popSize>
+    <popLoci>111_71, 111_117, 49_10, 49_91, 49_135, 2_66, 2_63, 2_30, 2_10, 50_12, 50_69, 50_86, 50_100, 51_144, 51_49, 51_14, 79_94, 80_91, 79_96, 80_89, 59_10, 59_127, 59_133, 59_144, 60_149, 60_148, 60_137, 83_96, 114_87, 114_74, 61_102, 118_102, 119_88, 86_12, 86_58, 86_66, 53_96, 109_89, 109_138, 87_27, 87_34, 87_63, 62_2, 13_41, 14_149, 13_66, 13_102, 14_88, 13_112, 14_78, 14_5, 130_39, 199_51, 199_55, 200_72, 200_56, 89_135, 65_57, 90_30, 90_69, 136_20, 136_115, 18_44, 201_107, 201_1, 139_41, 91_44, 91_77, 91_115, 140_81, 203_66, 203_10, 204_17, 94_71, 94_70, 94_33, 94_32, 94_23, 94_15, 30_19, 98_35, 147_14, 147_31, 100_131, 57_61, 154_122, 99_115, 99_83, 101_95, 73_32, 74_1, 74_68, 68_0, 68_20, 68_128, 69_141, 69_98, 69_82, 69_57, 69_52, 69_50, 69_31, 102_97, 75_55, 37_9, 37_32, 37_55, 37_80, 37_97, 37_112, 70_97, 70_65, 70_23, 209_33, 38_83, 39_106, 39_23, 210_117, 103_133, 43_84, 188_108, 189_122, 166_104, 71_87, 211_56, 212_141, 72_92, 214_82, 214_66, 214_63, 214_10, 46_2, 46_6, 46_20, 46_28, 46_60, 46_61, 46_95, 46_133, 46_135, 47_49, 47_119, 105_35, 105_137</popLoci>
+    <ind name="E02">
+      <data>?, ?, ?, ?, ?, G, G, G, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, A, C, C, C, G, G, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, G, ?, C, C, T, ?, ?, ?, ?, A, A, C, ?, ?, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, T, A, G, T, G, G, A, C, G, A, ?, ?</data>
+      <data>?, ?, ?, ?, ?, A, A, G, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, A, C, C, C, A, A, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, A, ?, C, A, A, ?, ?, ?, ?, A, A, C, ?, ?, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, T, A, G, T, G, G, A, C, G, A, ?, ?</data>
+    </ind>
+    <ind name="F02">
+      <data>?, ?, A, C, A, G, G, G, T, C, A, G, A, ?, C, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, T, A, G, T, G, G, A, C, ?, ?, ?, ?</data>
+      <data>?, ?, A, C, A, G, A, A, C, T, T, G, A, ?, C, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, T, A, G, T, G, G, A, C, ?, ?, ?, ?</data>
+    </ind>
+    <ind name="G02">
+      <data>?, ?, ?, ?, ?, G, G, G, T, C, A, G, A, G, C, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, T, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, A, A, ?, C, ?, ?, G, G, G, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, A, G, G, G, ?, A, ?, ?, C, ?, ?, G, G, C, C, C, T, T, G, C, ?, A, A, C, ?, ?, G, ?, ?, ?, G, ?, ?, A, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, G, G, ?, ?</data>
+      <data>?, ?, ?, ?, ?, A, G, A, C, C, A, A, G, A, T, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, T, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, G, T, ?, C, ?, ?, G, G, G, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, A, A, A, A, ?, T, ?, ?, C, ?, ?, A, G, C, C, C, T, T, G, C, ?, G, G, C, ?, ?, G, ?, ?, ?, A, ?, ?, G, ?, ?, ?, ?, G, T, G, G, C, T, A, A, T, G, G, ?, ?</data>
+    </ind>
+    <ind name="H02">
+      <data>?, ?, ?, ?, ?, ?, G, ?, T, C, A, ?, ?, ?, C, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, G, C, A, ?, G, G, G, ?, ?, ?, G, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</data>
+      <data>?, ?, ?, ?, ?, ?, G, ?, C, C, A, ?, ?, ?, C, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, G, C, G, ?, A, A, A, ?, ?, ?, G, ?, ?, A, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</data>
+    </ind>
+  </population>
+  <population name="dep2">
+    <popSize>4</popSize>
+    <popLoci>111_71, 111_117, 49_10, 49_91, 49_135, 2_66, 2_63, 2_30, 2_10, 50_12, 50_69, 50_86, 50_100, 51_144, 51_49, 51_14, 79_94, 80_91, 79_96, 80_89, 59_10, 59_127, 59_133, 59_144, 60_149, 60_148, 60_137, 83_96, 114_87, 114_74, 61_102, 118_102, 119_88, 86_12, 86_58, 86_66, 53_96, 109_89, 109_138, 87_27, 87_34, 87_63, 62_2, 13_41, 14_149, 13_66, 13_102, 14_88, 13_112, 14_78, 14_5, 130_39, 199_51, 199_55, 200_72, 200_56, 89_135, 65_57, 90_30, 90_69, 136_20, 136_115, 18_44, 201_107, 201_1, 139_41, 91_44, 91_77, 91_115, 140_81, 203_66, 203_10, 204_17, 94_71, 94_70, 94_33, 94_32, 94_23, 94_15, 30_19, 98_35, 147_14, 147_31, 100_131, 57_61, 154_122, 99_115, 99_83, 101_95, 73_32, 74_1, 74_68, 68_0, 68_20, 68_128, 69_141, 69_98, 69_82, 69_57, 69_52, 69_50, 69_31, 102_97, 75_55, 37_9, 37_32, 37_55, 37_80, 37_97, 37_112, 70_97, 70_65, 70_23, 209_33, 38_83, 39_106, 39_23, 210_117, 103_133, 43_84, 188_108, 189_122, 166_104, 71_87, 211_56, 212_141, 72_92, 214_82, 214_66, 214_63, 214_10, 46_2, 46_6, 46_20, 46_28, 46_60, 46_61, 46_95, 46_133, 46_135, 47_49, 47_119, 105_35, 105_137</popLoci>
+    <ind name="A03">
+      <data>?, ?, A, C, A, ?, G, G, T, ?, ?, ?, ?, ?, ?, ?, C, C, G, G, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, A, C, G, ?, ?, ?, G, C, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, ?, A, C, ?, ?, C, ?, ?, ?, G, A, C, ?, ?, ?, ?, G, T, G, T, G, T, T, G, ?, ?, C, T, ?, T, C, C, ?, G, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, T, G, G, C, C, C, ?, T, G, C, ?, A, A, C, ?, G, ?, ?, ?, ?, G, ?, ?, ?, ?, ?, ?, ?, A, T, A, G, T, G, G, A, C, G, G, A, C</data>
+      <data>?, ?, A, C, A, ?, G, A, C, ?, ?, ?, ?, ?, ?, ?, C, C, G, G, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, T, T, A, ?, ?, ?, C, C, A, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, ?, G, T, ?, ?, C, ?, ?, ?, G, A, C, ?, ?, ?, ?, A, C, A, A, A, C, T, A, ?, ?, T, C, ?, C, C, C, ?, G, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, T, G, A, G, C, A, ?, A, T, A, ?, A, A, C, ?, A, ?, ?, ?, ?, A, ?, ?, ?, ?, ?, ?, ?, A, T, A, G, T, G, G, A, C, T, A, C, T</data>
+    </ind>
+    <ind name="B03">
+      <data>?, ?, ?, ?, ?, G, G, ?, T, C, A, G, A, G, C, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, C, A, G, T, G, A, A, A, C, C, C, G, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, A, A, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, A, C, ?, ?, ?, ?, ?, ?, G, ?, ?, ?, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, G, G, ?, ?</data>
+      <data>?, ?, ?, ?, ?, G, G, ?, C, C, A, A, G, A, T, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, T, G, G, T, G, G, A, T, C, C, C, A, A, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, G, C, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, A, C, ?, ?, ?, ?, ?, ?, G, ?, ?, ?, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, T, A, ?, ?</data>
+    </ind>
+    <ind name="C03">
+      <data>A, A, G, T, G, G, G, G, T, C, A, G, A, ?, ?, ?, ?, ?, ?, ?, C, A, G, A, G, A, C, T, T, T, T, C, T, A, C, G, C, C, A, G, C, G, A, A, ?, C, C, C, ?, G, ?, A, ?, ?, ?, ?, ?, ?, ?, ?, A, C, C, ?, ?, A, A, C, C, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, G, A, A, ?, ?, C, ?, ?, C, G, G, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, G, G, C, C, C, T, ?, ?, ?, ?, A, A, C, ?, G, G, ?, ?, A, G, ?, ?, A, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, ?, ?, ?, ?</data>
+      <data>G, C, G, T, G, G, G, G, C, C, A, A, G, ?, ?, ?, ?, ?, ?, ?, C, C, G, C, G, A, C, T, A, C, G, T, C, A, C, G, C, T, G, C, T, A, G, T, ?, C, T, T, ?, A, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, G, T, C, ?, ?, G, A, C, C, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, G, G, G, ?, ?, T, ?, ?, G, A, G, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, A, G, C, C, C, T, ?, ?, ?, ?, A, A, C, ?, G, A, ?, ?, G, A, ?, ?, A, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, ?, ?, ?, ?</data>
+    </ind>
+    <ind name="D03">
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, A, G, ?, C, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, ?, C, C, C, G, G, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, G, C, ?, C, T, ?, ?, ?, ?, A, A, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, T, G, ?, ?</data>
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, C, G, ?, C, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, ?, C, C, C, A, A, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, G, C, ?, C, T, ?, ?, ?, ?, A, A, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, T, G, ?, ?</data>
+    </ind>
+  </population>
+  <population name="dep3">
+    <popSize>4</popSize>
+    <popLoci>111_71, 111_117, 49_10, 49_91, 49_135, 2_66, 2_63, 2_30, 2_10, 50_12, 50_69, 50_86, 50_100, 51_144, 51_49, 51_14, 79_94, 80_91, 79_96, 80_89, 59_10, 59_127, 59_133, 59_144, 60_149, 60_148, 60_137, 83_96, 114_87, 114_74, 61_102, 118_102, 119_88, 86_12, 86_58, 86_66, 53_96, 109_89, 109_138, 87_27, 87_34, 87_63, 62_2, 13_41, 14_149, 13_66, 13_102, 14_88, 13_112, 14_78, 14_5, 130_39, 199_51, 199_55, 200_72, 200_56, 89_135, 65_57, 90_30, 90_69, 136_20, 136_115, 18_44, 201_107, 201_1, 139_41, 91_44, 91_77, 91_115, 140_81, 203_66, 203_10, 204_17, 94_71, 94_70, 94_33, 94_32, 94_23, 94_15, 30_19, 98_35, 147_14, 147_31, 100_131, 57_61, 154_122, 99_115, 99_83, 101_95, 73_32, 74_1, 74_68, 68_0, 68_20, 68_128, 69_141, 69_98, 69_82, 69_57, 69_52, 69_50, 69_31, 102_97, 75_55, 37_9, 37_32, 37_55, 37_80, 37_97, 37_112, 70_97, 70_65, 70_23, 209_33, 38_83, 39_106, 39_23, 210_117, 103_133, 43_84, 188_108, 189_122, 166_104, 71_87, 211_56, 212_141, 72_92, 214_82, 214_66, 214_63, 214_10, 46_2, 46_6, 46_20, 46_28, 46_60, 46_61, 46_95, 46_133, 46_135, 47_49, 47_119, 105_35, 105_137</popLoci>
+    <ind name="E03">
+      <data>?, ?, ?, ?, ?, G, G, G, T, C, A, G, A, ?, C, G, C, C, G, G, ?, A, G, A, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, C, T, C, T, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, G, C, C, C, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, ?, ?, ?, ?</data>
+      <data>?, ?, ?, ?, ?, A, G, G, C, C, A, A, G, ?, T, T, T, T, A, A, ?, C, T, C, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, ?, ?, ?, T, C, T, C, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, G, C, G, C, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, ?, ?, ?, ?</data>
+    </ind>
+    <ind name="F03">
+      <data>?, ?, ?, ?, ?, G, G, G, T, C, A, G, A, G, C, G, ?, ?, ?, ?, C, A, G, A, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, ?, C, C, C, ?, G, G, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, C, ?, ?, ?, A, A, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, T, C, C, ?, G, C, A, A, G, G, G, ?, A, ?, ?, ?, T, T, G, G, C, C, C, T, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, C, ?, ?, ?, ?, A, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, T, G, ?, ?</data>
+      <data>?, ?, ?, ?, ?, G, A, A, C, C, A, A, G, A, T, T, ?, ?, ?, ?, C, C, G, C, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, ?, C, C, C, ?, A, G, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, T, ?, ?, ?, G, C, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, C, C, C, ?, A, C, G, A, A, A, G, ?, A, ?, ?, ?, T, A, A, G, C, C, C, T, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, C, ?, ?, ?, ?, G, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, T, G, ?, ?</data>
+    </ind>
+    <ind name="G03">
+      <data>?, ?, ?, ?, ?, ?, ?, G, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, A, G, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, A, A, C, C, C, ?, ?, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, C, T, C, ?, ?, ?, ?, A, A, G, G, G, ?, A, ?, ?, C, ?, ?, G, G, C, C, C, T, ?, ?, ?, ?, ?, A, C, ?, ?, ?, ?, ?, ?, G, ?, ?, ?, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, ?, ?, ?, ?</data>
+      <data>?, ?, ?, ?, ?, ?, ?, G, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, C, G, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, A, A, T, C, C, ?, ?, A, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, T, C, C, ?, ?, ?, ?, G, A, A, A, G, ?, A, ?, ?, T, ?, ?, A, G, C, C, C, T, ?, ?, ?, ?, ?, A, C, ?, ?, ?, ?, ?, ?, A, ?, ?, ?, ?, ?, ?, ?, G, C, G, A, C, G, G, G, C, ?, ?, ?, ?</data>
+    </ind>
+    <ind name="H03">
+      <data>?, ?, G, T, G, ?, G, G, T, C, A, G, A, G, C, G, ?, ?, ?, ?, C, A, G, A, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, C, A, ?, ?, ?, ?, A, ?, C, C, C, G, G, G, ?, A, C, T, G, ?, ?, ?, ?, ?, ?, C, T, T, ?, ?, ?, ?, ?, G, T, A, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, C, T, C, T, C, ?, ?, ?, ?, A, A, G, G, G, G, A, G, G, C, ?, ?, G, G, C, C, C, T, T, G, C, G, A, A, C, T, ?, G, C, C, ?, ?, C, T, ?, G, G, G, T, G, C, G, A, C, G, G, G, C, ?, ?, ?, ?</data>
+      <data>?, ?, G, T, G, ?, G, A, C, C, A, A, G, A, T, T, ?, ?, ?, ?, C, C, T, C, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, C, A, ?, ?, ?, ?, A, ?, C, C, C, A, A, G, ?, G, T, C, A, ?, ?, ?, ?, ?, ?, C, C, C, ?, ?, ?, ?, ?, A, C, T, ?, ?, ?, ?, ?, ?, T, ?, ?, ?, T, C, T, C, C, ?, ?, ?, ?, G, T, G, G, A, A, A, A, T, C, ?, ?, A, G, C, C, C, T, T, G, C, A, A, A, C, C, ?, A, T, T, ?, ?, T, C, ?, A, A, A, C, G, C, G, A, C, G, G, G, C, ?, ?, ?, ?</data>
+    </ind>
+  </population>
+</PGD>
+

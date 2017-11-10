@@ -84,27 +84,24 @@
             "datatype":"pairddrad",
             "max_shared_Hs_locus":0.5,
             "max_low_qual_bases":5,
-            "output_formats":[
-                "G",
-                "a",
-                "g",
-                "k",
-                "m",
-                "l",
-                "n",
-                "p",
-                "s",
-                "u",
-                "t",
-                "v"
-            ],
+            "output_formats":{
+                "items":[
+                    "d",
+                    "e",
+                    "n",
+                    "o",
+                    "v",
+                    "o"
+                ],
+                "__tuple__":true
+            },
             "maxdepth":10000
         },
         "name":"coco_PM",
         "_checkpoint":0,
         "populations":{},
         "database":"",
-        "_version":"0.7.15",
+        "_version":"0.7.17",
         "samples":[
             "A03",
             "D03",
@@ -132,7 +129,7 @@
             "smalt_index_wordlen":8,
             "random_seed":42,
             "output_loci_name_buffer":5,
-            "min_SE_refmap_overlap":17,
+            "min_SE_refmap_overlap":10,
             "max_inner_mate_distance":60,
             "preview_step1":4000000,
             "aligner":"bwa",

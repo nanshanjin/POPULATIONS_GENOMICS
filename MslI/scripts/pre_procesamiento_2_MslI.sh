@@ -1,5 +1,6 @@
 #!/bin/bash
 mkdir /home/jorge/POPULATIONS_GENOMICS/MslI/ipyrad/params
+mkdir /home/jorge/POPULATIONS_GENOMICS/MslI/ipyrad/fastqc/
 cd /home/jorge/POPULATIONS_GENOMICS/MslI/ipyrad/params
 
 
@@ -43,6 +44,7 @@ while [ $limite -ge $i ]
 do 
 
 	ipyrad -p /home/jorge/POPULATIONS_GENOMICS/MslI/ipyrad/params/params-coco_$i.txt -r -f -s 12
+
 	mkdir /home/jorge/POPULATIONS_GENOMICS/MslI/ipyrad/fastqc/corrida_$i
 	perl /home/jorge/FastQC/fastqc /home/jorge/POPULATIONS_GENOMICS/MslI/ipyrad/MslI_$i/MslI_$[i]_fastqs/*.fastq.gz -o /home/jorge/POPULATIONS_GENOMICS/MslI/ipyrad/fastqc/corrida_$i
 

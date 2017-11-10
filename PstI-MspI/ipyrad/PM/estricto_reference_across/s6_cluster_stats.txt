@@ -1,0 +1,22 @@
+vsearch v2.0.3_linux_x86_64, 3.8GB RAM, 4 cores
+/home/jorge/miniconda2/lib/python2.7/site-packages/bin/vsearch-linux-x86_64 -cluster_smallmem /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/PM/estricto_reference_across/estricto_reference_catshuf.tmp -strand plus -query_cov 0.75 -minsl 0.5 -id 0.9 -userout /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/PM/estricto_reference_across/estricto_reference.utemp -notmatched /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/PM/estricto_reference_across/estricto_reference.htemp -userfields query+target+qstrand -maxaccepts 1 -maxrejects 0 -fasta_width 0 -threads 4 -fulldp -usersort -log /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/PM/estricto_reference_across/s6_cluster_stats.txt 
+Started  Tue Oct 31 16:24:28 2017216291 nt in 1699 seqs, min 49, max 303, avg 127
+
+
+      Alphabet  nt
+    Word width  8
+     Word ones  8
+        Spaced  No
+        Hashed  No
+         Coded  No
+       Stepped  No
+         Slots  65536 (65.5k)
+       DBAccel  100%
+
+Clusters: 600 Size min 1, max 12, avg 2.8
+Singletons: 342, 20.1% of seqs, 57.0% of clusters
+
+
+Finished Tue Oct 31 16:24:28 2017
+Elapsed time 00:00
+Max memory 105.2MB

@@ -1,5 +1,5 @@
 process_radtags -1 /home/jorge/POPULATIONS_GENOMICS/MslI/RAW/grep/MslI_R1_.fastq -2 /home/jorge/POPULATIONS_GENOMICS/MslI/RAW/grep/MslI_R2_.fastq -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/process_radtags/ -b /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/barcodes/barcode_8 -c -s 20 -q --renz_1 msli --barcode_dist_1 0 -i fastq
-process_radtags version 1.47 executed 2017-10-25 11:32:24
+process_radtags version 1.47 executed 2017-11-01 15:58:57
 
 File	Retained Reads	Low Quality	Ambiguous Barcodes	Ambiguous RAD-Tag	Total
 MslI_R1_.fastq	286072	9142	4116174	2168	4413556

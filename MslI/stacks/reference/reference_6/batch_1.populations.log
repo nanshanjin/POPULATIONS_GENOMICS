@@ -1,0 +1,65 @@
+/usr/local/bin/populations -b 1 -P /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -s -M /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/pop_map/pop_map_reference -t 4 --genepop --vcf --vcf_haplotypes --structure
+/usr/local/bin/populations version 1.47 executed 2017-11-01 18:33:55
+
+# Distribution of population loci.
+# Distribution of valid loci matched to catalog locus.
+# Valid samples at locus	Count
+1	10120
+2	1671
+3	529
+4	220
+5	126
+6	100
+7	78
+8	51
+9	46
+10	38
+11	34
+12	77
+# Distribution of confounded loci at catalog locus.
+# Confounded samples at locus	Count
+0	13090
+# Distribution of missing loci at catalog loci.
+# Absent samples at locus	Count
+0	13090
+# Distribution of population loci after applying locus constraints.
+# Distribution of valid loci matched to catalog locus.
+# Valid samples at locus	Count
+1	10120
+2	1671
+3	529
+4	220
+5	126
+6	100
+7	78
+8	51
+9	46
+10	38
+11	34
+12	77
+# Distribution of confounded loci at catalog locus.
+# Confounded samples at locus	Count
+0	13090
+# Distribution of missing loci at catalog loci.
+# Absent samples at locus	Count
+0	13090
+Population 1 contained 0 incompatible loci -- more than two alleles present.
+Population 2 contained 1 incompatible loci -- more than two alleles present.
+Population 3 contained 0 incompatible loci -- more than two alleles present.
+Population 1 contained 0 incompatible loci -- more than two alleles present.
+Population 2 contained 0 incompatible loci -- more than two alleles present.
+Population 3 contained 0 incompatible loci -- more than two alleles present.
+# Distribution of the number of SNPs per locus.
+#n_snps	n_loci
+0	11339
+1	864
+2	386
+3	151
+4	82
+5	50
+6	25
+7	12
+8	5
+9	3
+10	0
+11	1

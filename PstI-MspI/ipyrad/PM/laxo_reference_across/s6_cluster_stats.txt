@@ -1,0 +1,22 @@
+vsearch v2.0.3_linux_x86_64, 3.8GB RAM, 4 cores
+/home/jorge/miniconda2/lib/python2.7/site-packages/bin/vsearch-linux-x86_64 -cluster_smallmem /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/PM/laxo_reference_across/laxo_reference_catshuf.tmp -strand plus -query_cov 0.75 -minsl 0.5 -id 0.85 -userout /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/PM/laxo_reference_across/laxo_reference.utemp -notmatched /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/PM/laxo_reference_across/laxo_reference.htemp -userfields query+target+qstrand -maxaccepts 1 -maxrejects 0 -fasta_width 0 -threads 4 -fulldp -usersort -log /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/PM/laxo_reference_across/s6_cluster_stats.txt 
+Started  Tue Oct 31 16:06:55 20175733109 nt in 49730 seqs, min 46, max 209, avg 115
+
+
+      Alphabet  nt
+    Word width  8
+     Word ones  8
+        Spaced  No
+        Hashed  No
+         Coded  No
+       Stepped  No
+         Slots  65536 (65.5k)
+       DBAccel  100%
+
+Clusters: 8411 Size min 1, max 19, avg 5.9
+Singletons: 1086, 2.2% of seqs, 12.9% of clusters
+
+
+Finished Tue Oct 31 16:07:21 2017
+Elapsed time 00:26
+Max memory 105.3MB

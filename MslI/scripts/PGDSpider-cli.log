@@ -1,0 +1,64 @@
+INFO  09-11 10:43:47,312 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:47,368 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:47,382 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:48,247 (PGDWriter.java:write:47)  -Writing data to outputstream...
+DEBUG 09-11 10:43:48,367 (PGDWriter.java:write:56)  -Writing data to outputstream done.
+INFO  09-11 10:43:48,735 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:48,790 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:48,804 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:49,060 (PGDWriter.java:write:47)  -Writing data to outputstream...
+DEBUG 09-11 10:43:49,074 (PGDWriter.java:write:56)  -Writing data to outputstream done.
+INFO  09-11 10:43:49,420 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:49,476 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:49,491 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:49,719 (PGDWriter.java:write:47)  -Writing data to outputstream...
+DEBUG 09-11 10:43:49,732 (PGDWriter.java:write:56)  -Writing data to outputstream done.
+INFO  09-11 10:43:50,069 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:50,126 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:50,139 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:50,410 (PGDWriter.java:write:47)  -Writing data to outputstream...
+DEBUG 09-11 10:43:50,429 (PGDWriter.java:write:56)  -Writing data to outputstream done.
+INFO  09-11 10:43:50,766 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:50,822 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:50,835 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:51,068 (PGDWriter.java:write:47)  -Writing data to outputstream...
+DEBUG 09-11 10:43:51,079 (PGDWriter.java:write:56)  -Writing data to outputstream done.
+INFO  09-11 10:43:51,426 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:51,482 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:51,496 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:51,716 (PGDWriter.java:write:47)  -Writing data to outputstream...
+DEBUG 09-11 10:43:51,725 (PGDWriter.java:write:56)  -Writing data to outputstream done.
+INFO  09-11 10:43:52,077 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:52,139 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:52,152 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:53,510 (PGDWriter.java:write:47)  -Writing data to outputstream...
+DEBUG 09-11 10:43:53,744 (PGDWriter.java:write:56)  -Writing data to outputstream done.
+INFO  09-11 10:43:54,102 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:54,158 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:54,186 (ParserFactory.java:getParserInstance:177)  -New VcfParser instance
+DEBUG 09-11 10:43:54,592 (PGDWriter.java:write:47)  -Writing data to outputstream...
+DEBUG 09-11 10:43:54,649 (PGDWriter.java:write:56)  -Writing data to outputstream done.
+INFO  09-11 10:43:54,986 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:55,042 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:55,064 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:55,065 (PGDParser.java:parse:54)  -Reading data from inputstream...
+INFO  09-11 10:43:56,000 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:56,056 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:56,063 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:56,063 (PGDParser.java:parse:54)  -Reading data from inputstream...
+INFO  09-11 10:43:56,522 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:56,581 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:56,588 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:56,589 (PGDParser.java:parse:54)  -Reading data from inputstream...
+INFO  09-11 10:43:57,023 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:57,081 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:57,088 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:57,088 (PGDParser.java:parse:54)  -Reading data from inputstream...
+INFO  09-11 10:43:57,559 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:57,619 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:57,627 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:57,627 (PGDParser.java:parse:54)  -Reading data from inputstream...
+INFO  09-11 10:43:58,057 (PGDSpiderConfig.java:loadConfig:64)  -load PGDSpider configuration from: /home/jorge/PGDSpider_2.1.1.2/spider.conf.xml
+DEBUG 09-11 10:43:58,114 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:58,121 (ParserFactory.java:getParserInstance:161)  -New PGDParser instance
+DEBUG 09-11 10:43:58,122 (PGDParser.java:parse:54)  -Reading data from inputstream...

@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet_PGD.xsl"?>
+<PGD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PGD_schema.xsd">
+  <header>
+    <numPop>3</numPop>
+    <missing>?</missing>
+    <gap>-</gap>
+    <ploidy>2</ploidy>
+    <gameticPhase>unknown</gameticPhase>
+  </header>
+  <dataDescription>
+    <dataType>SNP</dataType>
+    <locus id="SNP_1">
+      <locusChromosome>locus_14</locusChromosome>
+      <locusLocation>85</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_2">
+      <locusChromosome>locus_14</locusChromosome>
+      <locusLocation>87</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_3">
+      <locusChromosome>locus_24</locusChromosome>
+      <locusLocation>165</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_4">
+      <locusChromosome>locus_35</locusChromosome>
+      <locusLocation>93</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_5">
+      <locusChromosome>locus_36</locusChromosome>
+      <locusLocation>57</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_6">
+      <locusChromosome>locus_37</locusChromosome>
+      <locusLocation>25</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_7">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>8</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_8">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>54</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_9">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>62</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_10">
+      <locusChromosome>locus_52</locusChromosome>
+      <locusLocation>51</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_11">
+      <locusChromosome>locus_59</locusChromosome>
+      <locusLocation>31</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_12">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>210</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_13">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>211</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_14">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>212</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_15">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>213</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_16">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>214</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_17">
+      <locusChromosome>locus_98</locusChromosome>
+      <locusLocation>91</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_18">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>20</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_19">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>37</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_20">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>38</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_21">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>92</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_22">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>102</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_23">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>103</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_24">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>112</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_25">
+      <locusChromosome>locus_114</locusChromosome>
+      <locusLocation>100</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_26">
+      <locusChromosome>locus_119</locusChromosome>
+      <locusLocation>45</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_27">
+      <locusChromosome>locus_119</locusChromosome>
+      <locusLocation>115</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_28">
+      <locusChromosome>locus_125</locusChromosome>
+      <locusLocation>44</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_29">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>8</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_30">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>9</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_31">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>32</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_32">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>39</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_33">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>47</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_34">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>55</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_35">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>68</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_36">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>101</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_37">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>102</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_38">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>125</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_39">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>138</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_40">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>156</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_41">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>76</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_42">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>77</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_43">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>78</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_44">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>79</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_1">
+      <locusChromosome>locus_14</locusChromosome>
+      <locusLocation>85</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_2">
+      <locusChromosome>locus_14</locusChromosome>
+      <locusLocation>87</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_3">
+      <locusChromosome>locus_24</locusChromosome>
+      <locusLocation>165</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_4">
+      <locusChromosome>locus_35</locusChromosome>
+      <locusLocation>93</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_5">
+      <locusChromosome>locus_36</locusChromosome>
+      <locusLocation>57</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_6">
+      <locusChromosome>locus_37</locusChromosome>
+      <locusLocation>25</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_7">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>8</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_8">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>54</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_9">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>62</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_10">
+      <locusChromosome>locus_52</locusChromosome>
+      <locusLocation>51</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_11">
+      <locusChromosome>locus_59</locusChromosome>
+      <locusLocation>31</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_12">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>210</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_13">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>211</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_14">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>212</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_15">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>213</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_16">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>214</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_17">
+      <locusChromosome>locus_98</locusChromosome>
+      <locusLocation>91</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_18">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>20</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_19">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>37</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_20">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>38</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_21">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>92</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_22">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>102</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_23">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>103</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_24">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>112</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_25">
+      <locusChromosome>locus_114</locusChromosome>
+      <locusLocation>100</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_26">
+      <locusChromosome>locus_119</locusChromosome>
+      <locusLocation>45</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_27">
+      <locusChromosome>locus_119</locusChromosome>
+      <locusLocation>115</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_28">
+      <locusChromosome>locus_125</locusChromosome>
+      <locusLocation>44</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_29">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>8</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_30">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>9</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_31">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>32</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_32">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>39</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_33">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>47</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_34">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>55</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_35">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>68</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_36">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>101</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_37">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>102</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_38">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>125</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_39">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>138</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_40">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>156</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_41">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>76</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_42">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>77</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_43">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>78</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_44">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>79</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_1">
+      <locusChromosome>locus_14</locusChromosome>
+      <locusLocation>85</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_2">
+      <locusChromosome>locus_14</locusChromosome>
+      <locusLocation>87</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_3">
+      <locusChromosome>locus_24</locusChromosome>
+      <locusLocation>165</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_4">
+      <locusChromosome>locus_35</locusChromosome>
+      <locusLocation>93</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_5">
+      <locusChromosome>locus_36</locusChromosome>
+      <locusLocation>57</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_6">
+      <locusChromosome>locus_37</locusChromosome>
+      <locusLocation>25</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_7">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>8</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_8">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>54</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_9">
+      <locusChromosome>locus_38</locusChromosome>
+      <locusLocation>62</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_10">
+      <locusChromosome>locus_52</locusChromosome>
+      <locusLocation>51</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_11">
+      <locusChromosome>locus_59</locusChromosome>
+      <locusLocation>31</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_12">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>210</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_13">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>211</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_14">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>212</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_15">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>213</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_16">
+      <locusChromosome>locus_70</locusChromosome>
+      <locusLocation>214</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_17">
+      <locusChromosome>locus_98</locusChromosome>
+      <locusLocation>91</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_18">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>20</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_19">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>37</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_20">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>38</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_21">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>92</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_22">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>102</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_23">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>103</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_24">
+      <locusChromosome>locus_99</locusChromosome>
+      <locusLocation>112</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_25">
+      <locusChromosome>locus_114</locusChromosome>
+      <locusLocation>100</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_26">
+      <locusChromosome>locus_119</locusChromosome>
+      <locusLocation>45</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_27">
+      <locusChromosome>locus_119</locusChromosome>
+      <locusLocation>115</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_28">
+      <locusChromosome>locus_125</locusChromosome>
+      <locusLocation>44</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_29">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>8</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_30">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>9</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_31">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>32</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_32">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>39</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_33">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>47</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_34">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>55</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_35">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>68</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_36">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>101</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_37">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>102</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_38">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>125</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_39">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>138</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_40">
+      <locusChromosome>locus_160</locusChromosome>
+      <locusLocation>156</locusLocation>
+      <locusAncestralState>G</locusAncestralState>
+    </locus>
+    <locus id="SNP_41">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>76</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_42">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>77</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_43">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>78</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_44">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>79</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <numLoci>44</numLoci>
+  </dataDescription>
+  <population name="dep1">
+    <popSize>4</popSize>
+    <popLoci>SNP_1, SNP_2, SNP_3, SNP_4, SNP_5, SNP_6, SNP_7, SNP_8, SNP_9, SNP_10, SNP_11, SNP_12, SNP_13, SNP_14, SNP_15, SNP_16, SNP_17, SNP_18, SNP_19, SNP_20, SNP_21, SNP_22, SNP_23, SNP_24, SNP_25, SNP_26, SNP_27, SNP_28, SNP_29, SNP_30, SNP_31, SNP_32, SNP_33, SNP_34, SNP_35, SNP_36, SNP_37, SNP_38, SNP_39, SNP_40, SNP_41, SNP_42, SNP_43, SNP_44</popLoci>
+    <ind name="E02">
+      <data>?, ?, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, A, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, A, A, G</data>
+      <data>?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, A, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, A, A, G</data>
+    </ind>
+    <ind name="F02">
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, A, A, G</data>
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, A, A, G</data>
+    </ind>
+    <ind name="G02">
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, G, G, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, G, G, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+    </ind>
+    <ind name="H02">
+      <data>?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+      <data>?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+    </ind>
+  </population>
+  <population name="dep2">
+    <popSize>4</popSize>
+    <popLoci>SNP_1, SNP_2, SNP_3, SNP_4, SNP_5, SNP_6, SNP_7, SNP_8, SNP_9, SNP_10, SNP_11, SNP_12, SNP_13, SNP_14, SNP_15, SNP_16, SNP_17, SNP_18, SNP_19, SNP_20, SNP_21, SNP_22, SNP_23, SNP_24, SNP_25, SNP_26, SNP_27, SNP_28, SNP_29, SNP_30, SNP_31, SNP_32, SNP_33, SNP_34, SNP_35, SNP_36, SNP_37, SNP_38, SNP_39, SNP_40, SNP_41, SNP_42, SNP_43, SNP_44</popLoci>
+    <ind name="A03">
+      <data>C, G, G, T, G, ?, T, T, G, A, G, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, G, G, ?, T, T, C, T, C, G, A, C, A, A, A, ?, C, T, T, A</data>
+      <data>C, G, T, T, G, ?, A, C, A, A, A, ?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, T, A, ?, T, T, C, T, C, G, A, C, A, A, A, ?, C, T, T, A</data>
+    </ind>
+    <ind name="B03">
+      <data>?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, G, ?, T, T, C, T, C, G, A, C, A, A, A, ?, C, T, T, A</data>
+      <data>?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, T, A, ?, T, T, C, T, C, G, A, C, A, A, A, ?, C, T, T, A</data>
+    </ind>
+    <ind name="C03">
+      <data>?, ?, ?, A, ?, C, A, C, G, A, G, T, C, T, A, A, G, ?, ?, ?, ?, ?, ?, ?, C, T, G, ?, G, C, G, C, G, C, C, T, T, G, T, G, C, T, T, A</data>
+      <data>?, ?, ?, A, ?, C, A, C, G, A, G, T, C, T, A, A, C, ?, ?, ?, ?, ?, ?, ?, A, T, G, ?, G, C, G, C, G, C, C, T, T, G, T, T, C, T, T, A</data>
+    </ind>
+    <ind name="D03">
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, G, G, G, G, C, ?, ?, ?, ?, ?, ?, ?, ?, T, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, A, G, G, G, G, C, ?, ?, ?, ?, ?, ?, ?, ?, T, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+    </ind>
+  </population>
+  <population name="dep3">
+    <popSize>4</popSize>
+    <popLoci>SNP_1, SNP_2, SNP_3, SNP_4, SNP_5, SNP_6, SNP_7, SNP_8, SNP_9, SNP_10, SNP_11, SNP_12, SNP_13, SNP_14, SNP_15, SNP_16, SNP_17, SNP_18, SNP_19, SNP_20, SNP_21, SNP_22, SNP_23, SNP_24, SNP_25, SNP_26, SNP_27, SNP_28, SNP_29, SNP_30, SNP_31, SNP_32, SNP_33, SNP_34, SNP_35, SNP_36, SNP_37, SNP_38, SNP_39, SNP_40, SNP_41, SNP_42, SNP_43, SNP_44</popLoci>
+    <ind name="E03">
+      <data>T, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+      <data>C, A, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+    </ind>
+    <ind name="F03">
+      <data>?, ?, ?, A, T, ?, A, C, G, T, ?, ?, ?, ?, ?, ?, C, T, G, T, G, G, G, T, ?, T, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+      <data>?, ?, ?, A, T, ?, A, C, G, A, ?, ?, ?, ?, ?, ?, C, C, A, C, A, A, A, A, ?, T, G, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+    </ind>
+    <ind name="G03">
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, G, G, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+      <data>?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, ?, ?, ?, G, G, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, C, T, T, A</data>
+    </ind>
+    <ind name="H03">
+      <data>?, ?, ?, ?, ?, T, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, G, C, G, C, G, C, C, T, T, G, T, G, C, T, T, A</data>
+      <data>?, ?, ?, ?, ?, C, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, G, G, C, G, C, G, C, C, T, T, G, T, T, C, T, T, A</data>
+    </ind>
+  </population>
+</PGD>
+

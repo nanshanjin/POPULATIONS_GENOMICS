@@ -1,0 +1,30 @@
+Summary of parameters and input files.
+Please check that all is correct while calculation is starting...
+
+There are 4 loci.
+
+There are 3 populations.
+
+Burn in: 50000
+Thining interval: 10
+Sample size: 5000
+Resulting total number of iterations: 100000
+Nb of pilot runs: 20
+Length of each pilot run: 5000
+
+Allele counts:
+Pop. 1 locus 1 :   4   4 
+Pop. 1 locus 2 :   4   4 
+Pop. 1 locus 3 :   4   4 
+Pop. 1 locus 4 :   4   4 
+
+Pop. 2 locus 1 :   8   0 
+Pop. 2 locus 2 :   0   8 
+Pop. 2 locus 3 :   0   8 
+Pop. 2 locus 4 :   8   0 
+
+Pop. 3 locus 1 :   8   0 
+Pop. 3 locus 2 :   0   8 
+Pop. 3 locus 3 :   0   8 
+Pop. 3 locus 4 :   8   0 
+

@@ -1,246 +1,344 @@
 
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-05 05:49
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': ['estricto'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-05 05:49
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': ['laxo'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-05 05:49
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': None, 'steps': '3456', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-06 05:08
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': None, 'steps': '3456', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_2'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_4'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_12'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_2'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_4'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_12'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_2.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:15
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_4.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:16
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_12.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:16
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_2.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:17
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_4.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-09 09:18
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_12.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
-  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
- -------------------------------------------------------------
-  ipyrad [v.0.7.15]
-  Interactive assembly and analysis of RAD-seq data
- -------------------------------------------------------------
-  Begin run: 2017-10-25 10:39
+  Begin run: 2017-10-31 15:18
   Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': None, 'steps': '12', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 10:43
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': None, 'steps': '12', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 15:30
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': ['reference_PM'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 10:47
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': None, 'steps': '12', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 15:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-reference_PM.txt', 'branch': ['estricto_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 10:55
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': ['estricto'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 15:32
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-reference_PM.txt', 'branch': ['laxo_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 10:55
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': ['laxo'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 15:33
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': None, 'steps': '3456', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 10:55
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': None, 'steps': '3456', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:12
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': None, 'steps': '3456', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:03
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': None, 'steps': '3456', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:25
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_2_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:11
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_2'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:27
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:11
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_4'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:28
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_12_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:11
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_12'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:30
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_2_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:11
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_2'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:11
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_4'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:32
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_12_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:11
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_12'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:34
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/reference/params/params-estricto_min_sample_2_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:11
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_2.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:36
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/reference/params/params-estricto_min_sample_4_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:12
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_4.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:38
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/reference/params/params-estricto_min_sample_12_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:12
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_12.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:39
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/reference/params/params-laxo_min_sample_2_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:13
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_2.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:40
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/reference/params/params-laxo_min_sample_4_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_4.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:40
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/reference/params/params-laxo_min_sample_12_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
  -------------------------------------------------------------
-  ipyrad [v.0.7.15]
+  ipyrad [v.0.7.17]
   Interactive assembly and analysis of RAD-seq data
  -------------------------------------------------------------
-  Begin run: 2017-10-25 11:14
-  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_12.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Begin run: 2017-10-31 16:45
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:50
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_2_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:51
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:53
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_12_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:53
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_2_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:54
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:55
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_12_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:58
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_2_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:58
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 16:59
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_12_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:00
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_2_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:01
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:01
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_12_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:01
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_2_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:03
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_4_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:04
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_12_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:05
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_2_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:09
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_4_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-31 17:10
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_12_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_2_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_reference.txt', 'branch': ['laxo_min_sample_12_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_2_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_4_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_reference.txt', 'branch': ['estricto_min_sample_12_reference'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:31
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_2_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:32
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_4_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:33
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-estricto_min_sample_12_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:34
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_2_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:35
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_4_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.17]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-11-08 09:36
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-laxo_min_sample_12_reference.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
   Platform info: ('Linux', 'jorgePC', '4.9.0-0.bpo.2-amd64', '#1 SMP Debian 4.9.18-1~bpo8+1 (2017-04-10)', 'x86_64')

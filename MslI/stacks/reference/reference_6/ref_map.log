@@ -1,0 +1,833 @@
+ref_map.pl version 1.47 started at 2017-11-01 18:32:43
+/usr/local/bin/ref_map.pl -b 1 -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -O /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/pop_map/pop_map_reference -m 6 -T 4 --create_db -B Msli_ref_20_radtags -D 31/10/17 -X populations:--genepop --vcf --vcf_haplotypes --structure -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/E02.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/F02.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/G02.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/H02.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/A03.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/B03.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/C03.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/D03.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/E03.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/F03.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/G03.sam -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/H03.sam
+Initializing the database...
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "CREATE DATABASE Msli_ref_20_radtags"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags < /usr/local/share/stacks/sql/stacks.sql
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO batches SET id=1, description='31/10/17', date='2017-11-01', type='population'"
+Loading sample data into the MySQL database...
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=1, batch_id=1, type='sample', file='E02', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=2, batch_id=1, type='sample', file='F02', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=3, batch_id=1, type='sample', file='G02', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=4, batch_id=1, type='sample', file='H02', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=5, batch_id=1, type='sample', file='A03', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=6, batch_id=1, type='sample', file='B03', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=7, batch_id=1, type='sample', file='C03', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=8, batch_id=1, type='sample', file='D03', pop_id='1', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=9, batch_id=1, type='sample', file='E03', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=10, batch_id=1, type='sample', file='F03', pop_id='2', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=11, batch_id=1, type='sample', file='G03', pop_id='3', group_id='1'"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "INSERT INTO samples SET sample_id=12, batch_id=1, type='sample', file='H03', pop_id='3', group_id='1'"
+
+
+pstacks
+==========
+
+Sample 1 of 12 'E02'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/E02.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 1 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/E02.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 1
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 259777 primary alignments
+  Skipped 62316 (19.3%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 9737 unmapped reads
+Collapsed reads into 211203 stacks.
+Created 157912 loci; mean coverage is 1.65 (stdev: 1.52, max: 187).
+Discarded 156533 low coverage loci comprising 248103 (95.5%) reads.
+Kept 1379 loci; mean coverage is 8.47 (stdev: 11.24, max: 187).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 2 of 12 'F02'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/F02.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 2 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/F02.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 2
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 208860 primary alignments
+  Skipped 55566 (21.0%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 9310 unmapped reads
+Collapsed reads into 176040 stacks.
+Created 137954 loci; mean coverage is 1.51 (stdev: 1.28, max: 141).
+Discarded 137193 low coverage loci comprising 201767 (96.6%) reads.
+Kept 761 loci; mean coverage is 9.32 (stdev: 11.03, max: 141).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 3 of 12 'G02'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/G02.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 3 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/G02.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 3
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 254294 primary alignments
+  Skipped 57200 (18.4%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 6960 unmapped reads
+Collapsed reads into 207942 stacks.
+Created 156203 loci; mean coverage is 1.63 (stdev: 1.54, max: 198).
+Discarded 154696 low coverage loci comprising 241061 (94.8%) reads.
+Kept 1507 loci; mean coverage is 8.78 (stdev: 10.66, max: 198).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 4 of 12 'H02'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/H02.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 4 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/H02.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 4
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 239550 primary alignments
+  Skipped 59462 (19.9%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 7718 unmapped reads
+Collapsed reads into 198535 stacks.
+Created 151050 loci; mean coverage is 1.59 (stdev: 1.76, max: 228).
+Discarded 149723 low coverage loci comprising 227659 (95.0%) reads.
+Kept 1327 loci; mean coverage is 8.96 (stdev: 14.57, max: 228).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 5 of 12 'A03'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/A03.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 5 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/A03.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 5
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 316438 primary alignments
+  Skipped 82517 (20.7%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 10615 unmapped reads
+Collapsed reads into 248472 stacks.
+Created 179142 loci; mean coverage is 1.77 (stdev: 2.15, max: 307).
+Discarded 176412 low coverage loci comprising 292496 (92.4%) reads.
+Kept 2730 loci; mean coverage is 8.77 (stdev: 13.88, max: 307).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 6 of 12 'B03'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/B03.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 6 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/B03.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 6
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 268130 primary alignments
+  Skipped 65763 (19.7%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 9575 unmapped reads
+Collapsed reads into 218944 stacks.
+Created 161383 loci; mean coverage is 1.66 (stdev: 1.57, max: 198).
+Discarded 159828 low coverage loci comprising 254140 (94.8%) reads.
+Kept 1555 loci; mean coverage is 9.00 (stdev: 10.81, max: 198).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 7 of 12 'C03'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/C03.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 7 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/C03.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 7
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 307080 primary alignments
+  Skipped 77862 (20.2%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 8082 unmapped reads
+Collapsed reads into 241264 stacks.
+Created 182675 loci; mean coverage is 1.68 (stdev: 1.93, max: 273).
+Discarded 180221 low coverage loci comprising 283098 (92.2%) reads.
+Kept 2454 loci; mean coverage is 9.77 (stdev: 12.23, max: 273).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 8 of 12 'D03'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/D03.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 8 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/D03.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 8
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 191696 primary alignments
+  Skipped 44186 (18.7%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 5706 unmapped reads
+Collapsed reads into 162034 stacks.
+Created 131534 loci; mean coverage is 1.46 (stdev: 1.34, max: 177).
+Discarded 130888 low coverage loci comprising 185123 (96.6%) reads.
+Kept 646 loci; mean coverage is 10.17 (stdev: 13.17, max: 177).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 9 of 12 'E03'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/E03.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 9 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/E03.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 9
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 219851 primary alignments
+  Skipped 49276 (18.3%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 7807 unmapped reads
+Collapsed reads into 185035 stacks.
+Created 151606 loci; mean coverage is 1.45 (stdev: 1.29, max: 126).
+Discarded 150933 low coverage loci comprising 212860 (96.8%) reads.
+Kept 673 loci; mean coverage is 10.39 (stdev: 12.95, max: 126).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 10 of 12 'F03'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/F03.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 10 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/F03.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 10
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 286503 primary alignments
+  Skipped 66749 (18.9%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 7342 unmapped reads
+Collapsed reads into 227627 stacks.
+Created 167002 loci; mean coverage is 1.72 (stdev: 1.82, max: 298).
+Discarded 164827 low coverage loci comprising 267725 (93.4%) reads.
+Kept 2175 loci; mean coverage is 8.63 (stdev: 11.77, max: 298).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 11 of 12 'G03'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/G03.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 11 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/G03.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 11
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 211895 primary alignments
+  Skipped 49221 (18.9%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 6562 unmapped reads
+Collapsed reads into 178766 stacks.
+Created 139759 loci; mean coverage is 1.52 (stdev: 1.46, max: 203).
+Discarded 139009 low coverage loci comprising 204523 (96.5%) reads.
+Kept 750 loci; mean coverage is 9.83 (stdev: 14.38, max: 203).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Sample 12 of 12 'H03'
+----------
+/usr/local/bin/pstacks -t sam -f /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/H03.sam -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -i 12 -m 6 -p 4 2>&1
+pstacks parameters selected:
+  Alignments file: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/H03.sam
+  Output directory: /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/
+  Sample ID: 12
+  Min locus depth: 6
+  Max clipped proportion: 0.15
+  Min mapping quality: 10
+  Model: snp
+    Model alpha: 0.05
+Reading alignments...
+Done reading alignment records:
+  Kept 363345 primary alignments
+  Skipped 86150 (19.2%) primary alignments with insufficient mapping qualities
+  Skipped 0 (0.0%) excessively soft-clipped primary alignments
+  Skipped 0 secondary alignments
+  Skipped 0 supplementary alignments
+  Skipped 9785 unmapped reads
+Collapsed reads into 276232 stacks.
+Created 194752 loci; mean coverage is 1.87 (stdev: 2.15, max: 280).
+Discarded 190467 low coverage loci comprising 329178 (90.6%) reads.
+Kept 4285 loci; mean coverage is 7.97 (stdev: 11.19, max: 280).
+Identifying polymorphic sites and calling consensus sequences...done. (0 loci were blacklisted.)
+Writing tags, models, snps, and alleles files...
+pstacks is done.
+
+Depths of Coverage for Processed Samples:
+E02: 8.47x
+F02: 9.32x
+G02: 8.78x
+H02: 8.96x
+A03: 8.77x
+B03: 9.00x
+C03: 9.77x
+D03: 10.17x
+E03: 10.39x
+F03: 8.63x
+G03: 9.83x
+H03: 7.97x
+
+cstacks
+==========
+/usr/local/bin/cstacks -g -b 1 -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03  -p 4 2>&1
+
+cstacks parameters selected:
+  Database/Batch ID: 1
+  Loci matched based on aligned genomic location.
+Constructing catalog from 12 samples.
+
+Initializing new catalog...
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.alleles.tsv
+  1379 loci were newly added to the catalog.
+Building an index of the catalog.
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02 [2 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  239 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  522 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02 [3 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  363 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  1144 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02 [4 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  412 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  915 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03 [5 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  757 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  1973 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03 [6 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  675 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  880 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03 [7 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  992 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  1462 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03 [8 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  446 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  200 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03 [9 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  432 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  241 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03 [10 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  982 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  1193 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03 [11 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  411 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  339 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Processing sample /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03 [12 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.alleles.tsv
+Searching for matches by genomic location...
+Merging matches into catalog...
+  1443 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  2842 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+  Updating catalog index...
+
+Writing catalog in directory '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/'.
+cstacks is done.
+
+sstacks
+==========
+/usr/local/bin/sstacks -g -b 1 -c /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1 -o /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03 -s /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03  -p 4 2>&1
+
+Searching for matches by genomic location...
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.alleles.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02' [1 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+1379 stacks matched against the catalog containing 13090 loci.
+  1379 matching loci, 4 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  1523 total haplotypes examined from matching loci, 1518 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02' [2 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+761 stacks matched against the catalog containing 13090 loci.
+  761 matching loci, 3 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  863 total haplotypes examined from matching loci, 858 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02' [3 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+1507 stacks matched against the catalog containing 13090 loci.
+  1507 matching loci, 2 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  1703 total haplotypes examined from matching loci, 1693 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02' [4 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+1327 stacks matched against the catalog containing 13090 loci.
+  1327 matching loci, 2 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  1515 total haplotypes examined from matching loci, 1513 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03' [5 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+2730 stacks matched against the catalog containing 13090 loci.
+  2730 matching loci, 6 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  3146 total haplotypes examined from matching loci, 3140 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03' [6 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+1555 stacks matched against the catalog containing 13090 loci.
+  1555 matching loci, 4 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  1794 total haplotypes examined from matching loci, 1790 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03' [7 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+2454 stacks matched against the catalog containing 13090 loci.
+  2454 matching loci, 3 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  2657 total haplotypes examined from matching loci, 2654 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03' [8 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+646 stacks matched against the catalog containing 13090 loci.
+  646 matching loci, 2 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  692 total haplotypes examined from matching loci, 690 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03' [9 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+673 stacks matched against the catalog containing 13090 loci.
+  673 matching loci, 2 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  764 total haplotypes examined from matching loci, 761 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03' [10 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+2175 stacks matched against the catalog containing 13090 loci.
+  2175 matching loci, 2 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  2406 total haplotypes examined from matching loci, 2404 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03' [11 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+750 stacks matched against the catalog containing 13090 loci.
+  750 matching loci, 2 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  873 total haplotypes examined from matching loci, 871 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.matches.tsv
+
+Processing sample '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03' [12 of 12]
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.alleles.tsv
+Searching for matches by genomic location...
+  Creating map of genomic locations...done.
+4285 stacks matched against the catalog containing 13090 loci.
+  4285 matching loci, 5 contained no verified haplotypes.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  4535 total haplotypes examined from matching loci, 4530 verified.
+Outputing to file /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.matches.tsv
+
+sstacks is done.
+
+populations
+==========
+/usr/local/bin/populations -b 1 -P /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6 -s -M /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/pop_map/pop_map_reference -t 4 --genepop --vcf --vcf_haplotypes --structure 2>&1
+populations parameters selected:
+  Fst kernel smoothing: off
+  Bootstrap resampling: off
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Minimum stack depth: 0
+  Log liklihood filtering: off; threshold: 0
+  Minor allele frequency cutoff: 0
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+
+Parsing population map...
+The population map contained 12 samples, 3 population(s), 1 group(s).
+Reading the catalog...
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.tags.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.snps.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.alleles.tsv
+Reading matches to the catalog...
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.matches.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.matches.tsv
+Working on 12 samples.
+Working on 3 population(s):
+    1: A03, B03, C03, D03
+    2: E02, E03, F02, F03
+    3: G02, G03, H02, H03
+Working on 1 group(s) of populations:
+    defaultgrp: 1, 2, 3
+Populating observed haplotypes for 12 samples, 13090 loci.
+Writing SQL markers file to '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.markers.tsv'
+Removing 0 loci that did not pass sample/population constraints... retained 13090 loci.
+Loading model outputs for 12 samples, 13090 loci.
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.models.tsv
+  Parsing /home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.models.tsv
+Generating nucleotide-level summary statistics for population '1'
+Population '1' contained 0 incompatible loci -- more than two alleles present.
+Generating nucleotide-level summary statistics for population '2'
+Population '2' contained 1 incompatible loci -- more than two alleles present.
+Generating nucleotide-level summary statistics for population '3'
+Population '3' contained 0 incompatible loci -- more than two alleles present.
+Tallying loci across populations...done.
+Pruned 0 variant sites due to filter constraints (more with --verbose).
+Removing 172 additional loci for which all variant sites were filtered... retained 12918 loci.
+Regenerating nucleotide-level summary statistics for population '1'
+Population '1' contained 0 incompatible loci -- more than two alleles present.
+Regenerating nucleotide-level summary statistics for population '2'
+Population '2' contained 0 incompatible loci -- more than two alleles present.
+Regenerating nucleotide-level summary statistics for population '3'
+Population '3' contained 0 incompatible loci -- more than two alleles present.
+Re-tallying loci across populations...done.
+Generating haplotype-level summary statistics for population '1'
+Generating haplotype-level summary statistics for population '2'
+Generating haplotype-level summary statistics for population '3'
+Writing 12918 loci to summary statistics file, '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.sumstats.tsv'
+Writing 12918 loci to observed haplotype file, '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.haplotypes.tsv'
+Writing population data to GenePop file '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.genepop'
+Writing population data to Structure file '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.structure.tsv'...done.
+Writing population data haplotypes to VCF file '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.haplotypes.vcf'
+Writing population data to VCF file '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.vcf'
+Populations is done.
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.tags.tsv' INTO TABLE unique_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.snps.tsv' INTO TABLE snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.alleles.tsv' INTO TABLE alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.tags.tsv' INTO TABLE catalog_tags IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.snps.tsv' INTO TABLE catalog_snps IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.catalog.alleles.tsv' INTO TABLE catalog_alleles IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E02.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F02.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G02.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H02.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/A03.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/B03.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/C03.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/D03.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/E03.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/F03.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/G03.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/H03.matches.tsv' INTO TABLE matches IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.markers.tsv' INTO TABLE markers IGNORE 1 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.sumstats.tsv' INTO TABLE sumstats IGNORE 4 LINES"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/home/jorge/POPULATIONS_GENOMICS/MslI/stacks/reference/reference_6/batch_1.hapstats.tsv' INTO TABLE hapstats IGNORE 4 LINES"
+
+/usr/local/bin/index_radtags.pl -D Msli_ref_20_radtags -t -c 2>&1
+Generating catalog tag index
+  Fetching catalog SNPs...done.
+  Fetching markers...done.
+  Fetching genotypes...done.
+  Fetching associated sequences...done.
+  Fetching catalog matches...done.
+  Assembling catalog tags at the database...done.
+  Processing catalog tags
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/tmp/catalog_index_sk09hs9g' INTO TABLE catalog_index"
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/tmp/chr_index_Y1Y_ONrf' INTO TABLE chr_index"
+Generating unique tag index...
+Processing sample 1 of 12       Processing sample 2 of 12       Processing sample 3 of 12       Processing sample 4 of 12       Processing sample 5 of 12       Processing sample 6 of 12       Processing sample 7 of 12       Processing sample 8 of 12       Processing sample 9 of 12       Processing sample 10 of 12       Processing sample 11 of 12       Processing sample 12 of 12       
+mysql --defaults-file=/usr/local/share/stacks/sql/mysql.cnf Msli_ref_20_radtags -e "LOAD DATA LOCAL INFILE '/tmp/tag_index_gtQsVrxS' INTO TABLE tag_index"
+
+ref_map.pl completed at 2017-11-01 18:34:27

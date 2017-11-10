@@ -1,0 +1,69 @@
+Summary of parameters and input files.
+Please check that all is correct while calculation is starting...
+
+There are 17 loci.
+
+There are 3 populations.
+
+Burn in: 50000
+Thining interval: 10
+Sample size: 5000
+Resulting total number of iterations: 100000
+Nb of pilot runs: 20
+Length of each pilot run: 5000
+
+Allele counts:
+Pop. 1 locus 1 :   4   4 
+Pop. 1 locus 2 :   7   1 
+Pop. 1 locus 3 :   4   4 
+Pop. 1 locus 4 :   4   4 
+Pop. 1 locus 5 :   4   4 
+Pop. 1 locus 6 :   7   1 
+Pop. 1 locus 7 :   5   3 
+Pop. 1 locus 8 :   7   1 
+Pop. 1 locus 9 :   5   3 
+Pop. 1 locus 10 :   7   1 
+Pop. 1 locus 11 :   0   8 
+Pop. 1 locus 12 :   4   4 
+Pop. 1 locus 13 :   4   4 
+Pop. 1 locus 14 :   4   4 
+Pop. 1 locus 15 :   4   4 
+Pop. 1 locus 16 :   0   4 
+Pop. 1 locus 17 :   0   6 
+
+Pop. 2 locus 1 :   6   2 
+Pop. 2 locus 2 :   7   1 
+Pop. 2 locus 3 :   6   2 
+Pop. 2 locus 4 :   6   2 
+Pop. 2 locus 5 :   2   6 
+Pop. 2 locus 6 :   2   6 
+Pop. 2 locus 7 :   2   6 
+Pop. 2 locus 8 :   8   0 
+Pop. 2 locus 9 :   1   5 
+Pop. 2 locus 10 :   8   0 
+Pop. 2 locus 11 :   0   8 
+Pop. 2 locus 12 :   8   0 
+Pop. 2 locus 13 :   0   8 
+Pop. 2 locus 14 :   0   8 
+Pop. 2 locus 15 :   8   0 
+Pop. 2 locus 16 :   0   6 
+Pop. 2 locus 17 :   0   6 
+
+Pop. 3 locus 1 :   8   0 
+Pop. 3 locus 2 :   8   0 
+Pop. 3 locus 3 :   8   0 
+Pop. 3 locus 4 :   8   0 
+Pop. 3 locus 5 :   0   8 
+Pop. 3 locus 6 :   2   6 
+Pop. 3 locus 7 :   0   8 
+Pop. 3 locus 8 :   8   0 
+Pop. 3 locus 9 :   2   6 
+Pop. 3 locus 10 :   5   1 
+Pop. 3 locus 11 :   1   7 
+Pop. 3 locus 12 :   8   0 
+Pop. 3 locus 13 :   0   8 
+Pop. 3 locus 14 :   0   8 
+Pop. 3 locus 15 :   8   0 
+Pop. 3 locus 16 :   1   5 
+Pop. 3 locus 17 :   1   5 
+

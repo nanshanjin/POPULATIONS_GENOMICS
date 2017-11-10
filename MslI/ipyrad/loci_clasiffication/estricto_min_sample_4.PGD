@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet_PGD.xsl"?>
+<PGD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PGD_schema.xsd">
+  <header>
+    <numPop>3</numPop>
+    <missing>?</missing>
+    <gap>-</gap>
+    <ploidy>2</ploidy>
+    <gameticPhase>unknown</gameticPhase>
+  </header>
+  <dataDescription>
+    <dataType>SNP</dataType>
+    <locus id="SNP_1">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>76</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_2">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>77</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_3">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>78</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_4">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>79</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_1">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>76</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_2">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>77</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_3">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>78</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_4">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>79</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <locus id="SNP_1">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>76</locusLocation>
+      <locusAncestralState>C</locusAncestralState>
+    </locus>
+    <locus id="SNP_2">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>77</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_3">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>78</locusLocation>
+      <locusAncestralState>T</locusAncestralState>
+    </locus>
+    <locus id="SNP_4">
+      <locusChromosome>locus_161</locusChromosome>
+      <locusLocation>79</locusLocation>
+      <locusAncestralState>A</locusAncestralState>
+    </locus>
+    <numLoci>4</numLoci>
+  </dataDescription>
+  <population name="dep1">
+    <popSize>4</popSize>
+    <popLoci>SNP_1, SNP_2, SNP_3, SNP_4</popLoci>
+    <ind name="E02">
+      <data>T, A, A, G</data>
+      <data>T, A, A, G</data>
+    </ind>
+    <ind name="F02">
+      <data>T, A, A, G</data>
+      <data>T, A, A, G</data>
+    </ind>
+    <ind name="G02">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+    <ind name="H02">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+  </population>
+  <population name="dep2">
+    <popSize>4</popSize>
+    <popLoci>SNP_1, SNP_2, SNP_3, SNP_4</popLoci>
+    <ind name="A03">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+    <ind name="B03">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+    <ind name="C03">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+    <ind name="D03">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+  </population>
+  <population name="dep3">
+    <popSize>4</popSize>
+    <popLoci>SNP_1, SNP_2, SNP_3, SNP_4</popLoci>
+    <ind name="E03">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+    <ind name="F03">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+    <ind name="G03">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+    <ind name="H03">
+      <data>C, T, T, A</data>
+      <data>C, T, T, A</data>
+    </ind>
+  </population>
+</PGD>
+

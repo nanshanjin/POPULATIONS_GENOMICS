@@ -1,5 +1,5 @@
 process_radtags -1 /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/RAW/grep/PM_R1_.fastq -2 /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/RAW/grep/PM_R2_.fastq -o /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/process_radtags/ -b /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/stacks/barcodes/barcode_9 -c -s 20 -q --renz_1 pstI --renz_2 mspI --barcode_dist_1 0 -i fastq
-process_radtags version 1.47 executed 2017-10-25 11:35:01
+process_radtags version 1.47 executed 2017-11-01 00:13:49
 
 File	Retained Reads	Low Quality	Ambiguous Barcodes	Ambiguous RAD-Tag	Total
 PM_R1_.fastq	214378	24439	4529210	12007	4780034
