@@ -103,10 +103,23 @@
         "name":"estricto_min_sample_4_reference",
         "_checkpoint":7,
         "populations":{
-            "dep4":{
+            "dep1":{
                 "items":[
-                    3,
+                    4,
                     [
+                        "E02",
+                        "F02",
+                        "G02",
+                        "H02"
+                    ]
+                ],
+                "__tuple__":true
+            },
+            "dep3":{
+                "items":[
+                    4,
+                    [
+                        "E03",
                         "F03",
                         "G03",
                         "H03"
@@ -114,35 +127,14 @@
                 ],
                 "__tuple__":true
             },
-            "dep1":{
-                "items":[
-                    3,
-                    [
-                        "E02",
-                        "F02",
-                        "G02"
-                    ]
-                ],
-                "__tuple__":true
-            },
-            "dep3":{
-                "items":[
-                    3,
-                    [
-                        "C03",
-                        "D03",
-                        "E03"
-                    ]
-                ],
-                "__tuple__":true
-            },
             "dep2":{
                 "items":[
-                    3,
+                    4,
                     [
-                        "H02",
                         "A03",
-                        "B03"
+                        "B03",
+                        "C03",
+                        "D03"
                     ]
                 ],
                 "__tuple__":true
