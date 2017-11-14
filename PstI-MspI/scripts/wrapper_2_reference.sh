@@ -12,7 +12,7 @@ mkdir /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/reference
 ipyrad -p /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-coco_PM.txt -b reference_PM -f -r # ramifico el analisis para llevar a cabo uno estricto y otro laxo , cambio los parametros 11,12 y 14 
 
 	sed -i '/\[6] /c\/home/jorge/POPULATIONS_GENOMICS/CoConut.genome.fa                     ## [7] [reference_sequence]: '      params-reference_PM.txt 
-	sed -i '/\[27] /c\reference                                                             ## [5] [assembly_method]: '			params-reference_PM.txt
+	sed -i '/\[27] /c\denovo+reference                                                       ## [5] [assembly_method]: '			params-reference_PM.txt
 
 
 ipyrad -p /home/jorge/POPULATIONS_GENOMICS/PstI-MspI/ipyrad/params/params-reference_PM.txt -b estricto_reference -f -r # ramifico el analisis para llevar a cabo uno estricto y otro laxo , cambio los parametros 11,12 y 14 

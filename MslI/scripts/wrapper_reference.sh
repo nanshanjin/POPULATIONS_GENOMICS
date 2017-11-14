@@ -15,7 +15,7 @@ cd /home/jorge/POPULATIONS_GENOMICS/MslI/ipyrad/params
 ipyrad -m reference params-coco_1.txt params-coco_2.txt params-coco_3.txt params-coco_4.txt params-coco_5.txt params-coco_6.txt params-coco_7.txt params-coco_8.txt params-coco_9.txt 
 
 sed -i '/\[6] /c\/home/jorge/POPULATIONS_GENOMICS/CoConut.genome.fa                 ## [6] [reference_sequence]: '      params-reference.txt 
-sed -i '/\[27] /c\reference                                                         ## [5] [assembly_method]: '			params-reference.txt
+sed -i '/\[27] /c\denovo+reference                                                         ## [5] [assembly_method]: '			params-reference.txt
 
 #ramifico para crear un analisis laxo y uno estricto
 
